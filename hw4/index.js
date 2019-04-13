@@ -1,4 +1,5 @@
 
+
 const HOSTED_URLS = {
   model:
       'model_js/model.json',
@@ -8,11 +9,18 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'Alice was beginning to get very tired of sitting by her sister on the bank.',
+      'Once more, the Dover mail struggled on, with the jack-boots of its passengers squashing along by its side.',
   'example2':
-      'Buda-Pesth seems a wonderful place.',
+      'Must you go? Oh! young Herr, must you go?',
   'example3':
-      'Scepticism was as much the result of knowledge, as knowledge is of scepticism.'      
+      'I shall be well content if nothing worse happen to us during our voyage.',
+  'example4':
+      'Angry people are not always wise.',
+  'example5':
+      'Never trust to general impressions, my boy, but concentrate yourself upon details.',
+  'example6':
+      'Hateful to me as the gates of Hades is that man who hides one thing in his heart and speaks another.',
+
 };
 
 function status(statusText) {
@@ -158,3 +166,4 @@ async function setup() {
 }
 
 setup();
+
