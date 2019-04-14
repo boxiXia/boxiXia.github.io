@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e35298e-d0f3-4eee-b1e1-c67aa4305579" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../hw4p1_dense/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4p1_dense/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_js/group1-shard1of1.bin" beforeDir="false" afterPath="$PROJECT_DIR$/model_js/group1-shard1of1.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_js/model.json" beforeDir="false" afterPath="$PROJECT_DIR$/model_js/model.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -84,12 +85,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555216494954</updated>
-      <workItem from="1555216496031" duration="1318000" />
+      <workItem from="1555216496031" duration="1920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1318000" />
+    <option name="totallyTimeSpent" value="1920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1663" y="1187" width="1910" height="810" extended-state="0" />
