@@ -18,7 +18,7 @@ const examples = {
   'example3':
       'The peasant woman, perceiving that my mother fixed eyes of wonder and admiration on this lovely girl, eagerly communicated her history.',
   'example4':
-      'Angry people are not always wise.',
+      'So he inquired who she was, and got introduced, and asked her for the two next.',
   'example5':
       'Never trust to general impressions, my boy, but concentrate yourself upon details.',
   'example6':
