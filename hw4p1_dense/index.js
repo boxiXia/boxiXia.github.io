@@ -1,6 +1,7 @@
 
 
 
+
 const HOSTED_URLS = {
   model:
       'model_js/model.json',
@@ -57,8 +58,7 @@ function doPredict(predict) {
   for (var x in result.score) {
     score_string += x + " ->  " + result.score[x].toFixed(3) + ", "
   }
-  const prediction_string = 'prediction:'+result.prediction +'
-(';
+  const prediction_string = 'prediction:'+result.prediction +'(';
   //console.log(score_string);
   status(
       prediction_string+score_string + ' elapsed: ' + result.elapsed.toFixed(3) + ' ms)');
@@ -178,6 +178,5 @@ async function setup() {
 }
 
 setup();
-
 
 
