@@ -12,16 +12,15 @@ const examples = {
   'example1':
       'Once more, the Dover mail struggled on, with the jack-boots of its passengers squashing along by its side.',
   'example2':
-      'Must you go? Oh! young Herr, must you go?',
+      'I did not sleep well, though my bed was comfortable enough, for I had all sorts of queer dreams.',
   'example3':
-      'I shall be well content if nothing worse happen to us during our voyage.',
+      'The peasant woman, perceiving that my mother fixed eyes of wonder and admiration on this lovely girl, eagerly communicated her history.',
   'example4':
       'Angry people are not always wise.',
   'example5':
       'Never trust to general impressions, my boy, but concentrate yourself upon details.',
   'example6':
-      'Hateful to me as the gates of Hades is that man who hides one thing in his heart and speaks another.',
-
+      'With this she darted furiously everywhere among the hosts of the Achaeans, urging them forward, and putting courage into the heart of each so that he might fight and do battle without ceasing.',
 };
 
 function status(statusText) {
@@ -58,9 +57,11 @@ function doPredict(predict) {
   for (var x in result.score) {
     score_string += x + " ->  " + result.score[x].toFixed(3) + ", "
   }
+  const prediction_string = 'prediction:'+result.prediction +'
+(';
   //console.log(score_string);
   status(
-      score_string + ' elapsed: ' + result.elapsed.toFixed(3) + ' ms)');
+      prediction_string+score_string + ' elapsed: ' + result.elapsed.toFixed(3) + ' ms)');
 }
 
 function prepUI(predict) {
@@ -123,7 +124,8 @@ class Classifier {
     showMetadata(metadata);
     this.maxLen = metadata['max_len'];
     console.log('maxLen = ' + this.maxLen);
-    this.wordIndex = metadata['word_index']
+    this.wordIndex = metadata['word_index'];
+    this.label_names = metadata['label_names'];
   }
 
   predict(text) {
@@ -148,7 +150,16 @@ class Classifier {
     predictOut.dispose();
     const endMs = performance.now();
 
-    return {score: score, elapsed: (endMs - beginMs)};
+    // const score_tensor = tf.tensor1d(score).argMax();
+    // score_tensor.argMax().print();
+
+    const prediction_id = tf.tensor1d(score).argMax().dataSync()[0]
+    // let values = tf.tensor1d(score).argMax().map(t => t.dataSync()[0]);
+    // console.log(prediction_id);
+    const prediction = this.label_names[prediction_id];
+    // console.log(prediction);
+
+    return {prediction:prediction,score:score, elapsed: (endMs - beginMs)};
   }
 };
 
@@ -167,7 +178,6 @@ async function setup() {
 }
 
 setup();
-
 
 
 
