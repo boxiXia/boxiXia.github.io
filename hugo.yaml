@@ -6,7 +6,7 @@ theme: PaperMod
 
 # Pagination settings
 pagination:
-  pagerSize: 10
+  pagerSize: 50
 
 # Site parameters
 params:
