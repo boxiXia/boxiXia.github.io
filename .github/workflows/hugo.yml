@@ -1,68 +1,117 @@
+# Workflow name displayed in GitHub Actions tab
 name: Deploy Hugo site to Pages
 
+# Trigger conditions for this workflow
 on:
+  # Automatically run when code is pushed to master branch
   push:
     branches:
       - master
+  # Allow manual triggering from the Actions tab
   workflow_dispatch:
 
+# Permissions required for this workflow to run
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: read    # Read repository contents
+  pages: write      # Write to GitHub Pages
+  id-token: write   # Generate authentication tokens for deployment
 
+# Concurrency settings to prevent conflicts
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "pages"                  # Only one pages deployment at a time
+  cancel-in-progress: false       # Queue new deployments instead of canceling
 
+# Default settings for all steps
 defaults:
   run:
-    shell: bash
+    shell: bash   # Use bash shell for all commands
 
+# Define the jobs that make up this workflow
 jobs:
+  # ============================================================
+  # BUILD JOB: Compile Hugo site into static files
+  # ============================================================
   build:
+    # Run on latest Ubuntu virtual machine
     runs-on: ubuntu-latest
+
+    # Environment variables for this job
     env:
-      HUGO_VERSION: 0.152.2
+      HUGO_VERSION: 0.152.2   # Hugo version (v0.146.0+ required for PaperMod)
+
     steps:
+      # STEP 1: Install Hugo
+      # Downloads and installs Hugo Extended binary
       - name: Install Hugo CLI
         run: |
+          # Download Hugo extended version (required for Sass/SCSS support)
           wget -O ${{ runner.temp }}/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz \
+          # Extract the downloaded archive
           && tar -xzf ${{ runner.temp }}/hugo.tar.gz -C ${{ runner.temp }} \
+          # Move hugo binary to system PATH
           && sudo mv ${{ runner.temp }}/hugo /usr/local/bin/
+
+      # STEP 2: Install Dart Sass
+      # Required for processing Sass/SCSS stylesheets
       - name: Install Dart Sass
         run: sudo snap install dart-sass
+
+      # STEP 3: Checkout repository
+      # Downloads your repository code to the runner
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
-          fetch-depth: 0
+          submodules: recursive   # Fetch git submodules (PaperMod theme)
+          fetch-depth: 0          # Fetch full git history (needed for .GitInfo and .Lastmod)
+
+      # STEP 4: Configure GitHub Pages
+      # Sets up GitHub Pages and provides the base URL
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+
+      # STEP 5: Install Node.js dependencies (optional)
+      # Only runs if package-lock.json exists
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+
+      # STEP 6: Build the Hugo site
+      # Compiles markdown/templates into static HTML/CSS/JS
       - name: Build with Hugo
         env:
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
+          HUGO_ENVIRONMENT: production   # Set environment to production
+          HUGO_ENV: production           # Used by some themes for optimization
         run: |
           hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --gc \                                                    # Run garbage collection after build
+            --minify \                                                # Minify HTML/CSS/JS for smaller files
+            --baseURL "${{ steps.pages.outputs.base_url }}/"         # Use GitHub Pages URL
+
+      # STEP 7: Upload build artifacts
+      # Packages the built site for the deploy job
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./public   # Upload the generated public/ directory
 
+  # ============================================================
+  # DEPLOY JOB: Publish built site to GitHub Pages
+  # ============================================================
   deploy:
+    # Deployment environment configuration
     environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      name: github-pages                              # Environment name
+      url: ${{ steps.deployment.outputs.page_url }}  # Published site URL
+
+    # Run on latest Ubuntu virtual machine
     runs-on: ubuntu-latest
+
+    # Only run after build job completes successfully
     needs: build
+
     steps:
+      # STEP 1: Deploy to GitHub Pages
+      # Takes the uploaded artifact and publishes it
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
