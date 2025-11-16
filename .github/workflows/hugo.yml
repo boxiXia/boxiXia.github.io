@@ -76,13 +76,13 @@ jobs:
       # Compiles markdown/templates into static HTML/CSS/JS
       - name: Build with Hugo
         env:
-          HUGO_ENVIRONMENT: production   # Set environment to production
-          HUGO_ENV: production           # Used by some themes for optimization
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
         run: |
           hugo \
-            --gc \                                                    # Run garbage collection after build
-            --minify \                                                # Minify HTML/CSS/JS for smaller files
-            --baseURL "${{ steps.pages.outputs.base_url }}/"         # Use GitHub Pages URL
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       # STEP 7: Upload build artifacts
       # Packages the built site for the deploy job
