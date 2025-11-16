@@ -1,0 +1,57 @@
+baseURL = 'https://boxixia.github.io/'
+languageCode = 'en-us'
+title = 'Boxi Xia'
+theme = 'PaperMod'
+
+[params]
+  env = "production"
+  description = "Personal website of Boxi Xia"
+  author = "Boxi Xia"
+
+  # Profile mode
+  [params.profileMode]
+    enabled = true
+    title = "Boxi Xia"
+    subtitle = "Welcome to my personal website"
+    imageUrl = ""
+    imageTitle = ""
+    imageWidth = 120
+    imageHeight = 120
+
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "/posts"
+
+    [[params.profileMode.buttons]]
+      name = "About"
+      url = "/about"
+
+  # Social icons
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/boxiXia"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:your-email@example.com"
+
+  # Home page settings
+  [params.homeInfoParams]
+    Title = "Hi there!"
+    Content = "Welcome to my personal website"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
