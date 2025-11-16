@@ -44,11 +44,8 @@ jobs:
       # Downloads and installs Hugo Extended binary
       - name: Install Hugo CLI
         run: |
-          # Download Hugo extended version (required for Sass/SCSS support)
           wget -O ${{ runner.temp }}/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz \
-          # Extract the downloaded archive
           && tar -xzf ${{ runner.temp }}/hugo.tar.gz -C ${{ runner.temp }} \
-          # Move hugo binary to system PATH
           && sudo mv ${{ runner.temp }}/hugo /usr/local/bin/
 
       # STEP 2: Install Dart Sass
