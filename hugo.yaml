@@ -49,21 +49,23 @@ params:
   profileMode:
     enabled: true
     title: Boxi Xia
-    subtitle: Welcome to my personal website
+    subtitle: Postdoctoral Researcher | Duke University
     # Add your profile image: create static/images/profile.jpg and uncomment below
     # imageUrl: /images/profile.jpg
     imageTitle: Profile
     imageWidth: 120
     imageHeight: 120
     buttons:
-      - name: Posts
-        url: /posts
+      # - name: Posts
+      #   url: /posts
+      - name: Publications
+        url: /publications
       - name: About
         url: /about
-      - name: Tags
-        url: /tags
-      - name: Archive
-        url: /archives
+      # - name: Tags
+      #   url: /tags
+      # - name: Archive
+      #   url: /archives
 
   # Social icons
   socialIcons:
@@ -72,7 +74,7 @@ params:
     - name: googlescholar
       url: https://scholar.google.com/citations?user=TjA61pwAAAAJ&hl=en
     - name: email
-      url: mailto:your-email@example.com
+      url: mailto:boxi.xia@columbia.edu
 
   # Uncomment and add more social links as needed
   # - name: linkedin
@@ -108,18 +110,22 @@ outputs:
 # Navigation menu
 menu:
   main:
-    - identifier: posts
-      name: Posts
-      url: /posts/
-      weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
-    - identifier: archives
-      name: Archive
-      url: /archives/
-      weight: 30
+    # - identifier: posts
+    #   name: Posts
+    #   url: /posts/
+    #   weight: 10
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags/
+    #   weight: 20
+    - identifier: publications
+      name: Publications
+      url: /publications/
+      weight: 25
+    # - identifier: archives
+    #   name: Archive
+    #   url: /archives/
+    #   weight: 30
     - identifier: about
       name: About
       url: /about/
@@ -137,6 +143,9 @@ taxonomies:
 
 # Markup configuration
 markup:
+  goldmark:
+    renderer:
+      unsafe: true  # Allow raw HTML in markdown
   highlight:
     anchorLineNos: false
     codeFences: true
