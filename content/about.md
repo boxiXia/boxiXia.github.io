@@ -9,17 +9,21 @@ summary: "About me"
 
 Welcome to my personal website! I'm Boxi Xia.
 
+## Research
+
+I'm a researcher focused on machine learning and robotics. You can find my publications on [Google Scholar](https://scholar.google.com/citations?user=TjA61pwAAAAJ&hl=en).
+
 ## Background
 
-This is where you can add information about yourself, your interests, education, work experience, or anything else you'd like to share.
+This section can include information about your education, work experience, and research interests.
 
 ## Interests
 
-- Add your interests here
-- Technology
-- Learning
-- Building things
+- Machine Learning
+- Robotics
+- Computer Vision
+- Artificial Intelligence
 
 ## Contact
 
-Feel free to reach out to me through the social links on the homepage.
+Feel free to reach out to me through the social links on the homepage or check out my work on GitHub.

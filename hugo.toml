@@ -72,6 +72,10 @@ theme = 'PaperMod'
     url = "https://github.com/boxiXia"
 
   [[params.socialIcons]]
+    name = "googlescholar"
+    url = "https://scholar.google.com/citations?user=TjA61pwAAAAJ&hl=en"
+
+  [[params.socialIcons]]
     name = "email"
     url = "mailto:your-email@example.com"
 
@@ -87,10 +91,6 @@ theme = 'PaperMod'
   # [[params.socialIcons]]
   #   name = "stackoverflow"
   #   url = "https://stackoverflow.com/users/userid"
-
-  # [[params.socialIcons]]
-  #   name = "youtube"
-  #   url = "https://youtube.com/@yourchannel"
 
   # Home page info (alternative to profile mode)
   # [params.homeInfoParams]
