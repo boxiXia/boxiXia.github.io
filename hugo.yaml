@@ -1,0 +1,162 @@
+# Hugo site configuration in YAML format
+baseURL: https://boxixia.github.io/
+languageCode: en-us
+title: Boxi Xia
+theme: PaperMod
+
+# Pagination settings
+pagination:
+  pagerSize: 10
+
+# Site parameters
+params:
+  env: production
+  description: Personal website and blog of Boxi Xia
+  author: Boxi Xia
+
+  # Theme settings
+  defaultTheme: auto  # auto, light, or dark
+  disableThemeToggle: false
+
+  # Display settings
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  TocOpen: false
+
+  # SEO and Meta
+  keywords:
+    - blog
+    - portfolio
+    - personal website
+
+  # Date format
+  DateFormat: January 2, 2006
+
+  # Comments - uncomment and configure if needed
+  # comments:
+  #   disqus: your-disqus-shortname
+
+  # Google Analytics - uncomment and add your ID
+  # googleAnalytics: G-XXXXXXXXXX
+
+  # Profile mode (homepage)
+  profileMode:
+    enabled: true
+    title: Boxi Xia
+    subtitle: Welcome to my personal website
+    # Add your profile image: create static/images/profile.jpg and uncomment below
+    # imageUrl: /images/profile.jpg
+    imageTitle: Profile
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: Posts
+        url: /posts
+      - name: About
+        url: /about
+      - name: Tags
+        url: /tags
+      - name: Archive
+        url: /archives
+
+  # Social icons
+  socialIcons:
+    - name: github
+      url: https://github.com/boxiXia
+    - name: googlescholar
+      url: https://scholar.google.com/citations?user=TjA61pwAAAAJ&hl=en
+    - name: email
+      url: mailto:your-email@example.com
+
+  # Uncomment and add more social links as needed
+  # - name: linkedin
+  #   url: https://linkedin.com/in/yourprofile
+  # - name: twitter
+  #   url: https://twitter.com/yourhandle
+  # - name: stackoverflow
+  #   url: https://stackoverflow.com/users/userid
+
+  # Home page info (alternative to profile mode)
+  # homeInfoParams:
+  #   Title: Hi there!
+  #   Content: Welcome to my personal website
+
+  # Cover image for posts (default)
+  cover:
+    linkFullImages: true
+    responsiveImages: true
+
+  # Edit post link
+  editPost:
+    URL: https://github.com/boxiXia/boxiXia.github.io/tree/master/content
+    Text: Suggest Changes
+    appendFilePath: true
+
+# Search functionality
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# Navigation menu
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archive
+      url: /archives/
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 40
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 50
+
+# Taxonomies (tags and categories)
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+# Markup configuration
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    noClasses: false
+    style: monokai
+
+# Privacy settings
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+  x:
+    disabled: false
+    enableDNT: true
+    simple: true
+  instagram:
+    disabled: false
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
