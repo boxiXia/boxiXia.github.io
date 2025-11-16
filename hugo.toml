@@ -3,18 +3,50 @@ languageCode = 'en-us'
 title = 'Boxi Xia'
 theme = 'PaperMod'
 
+[pagination]
+  pagerSize = 10
+
 [params]
   env = "production"
-  description = "Personal website of Boxi Xia"
+  description = "Personal website and blog of Boxi Xia"
   author = "Boxi Xia"
 
-  # Profile mode
+  # Theme settings
+  defaultTheme = "auto" # auto, light, or dark
+  disableThemeToggle = false
+
+  # Display settings
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+  TocOpen = false
+
+  # SEO and Meta
+  keywords = ["blog", "portfolio", "personal website"]
+
+  # Date format
+  DateFormat = "January 2, 2006"
+
+  # Comments - uncomment and configure if needed
+  # [params.comments]
+  #   disqus = "your-disqus-shortname"
+
+  # Google Analytics - uncomment and add your ID
+  # googleAnalytics = "G-XXXXXXXXXX"
+
+  # Profile mode (homepage)
   [params.profileMode]
     enabled = true
     title = "Boxi Xia"
     subtitle = "Welcome to my personal website"
-    imageUrl = ""
-    imageTitle = ""
+    # Add your profile image: create static/images/profile.jpg and uncomment below
+    # imageUrl = "/images/profile.jpg"
+    imageTitle = "Profile"
     imageWidth = 120
     imageHeight = 120
 
@@ -26,20 +58,61 @@ theme = 'PaperMod'
       name = "About"
       url = "/about"
 
+    [[params.profileMode.buttons]]
+      name = "Tags"
+      url = "/tags"
+
+    [[params.profileMode.buttons]]
+      name = "Archive"
+      url = "/archives"
+
   # Social icons
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/boxiXia"
 
   [[params.socialIcons]]
+    name = "googlescholar"
+    url = "https://scholar.google.com/citations?user=TjA61pwAAAAJ&hl=en"
+
+  [[params.socialIcons]]
     name = "email"
     url = "mailto:your-email@example.com"
 
-  # Home page settings
-  [params.homeInfoParams]
-    Title = "Hi there!"
-    Content = "Welcome to my personal website"
+  # Uncomment and add more social links as needed
+  # [[params.socialIcons]]
+  #   name = "linkedin"
+  #   url = "https://linkedin.com/in/yourprofile"
 
+  # [[params.socialIcons]]
+  #   name = "twitter"
+  #   url = "https://twitter.com/yourhandle"
+
+  # [[params.socialIcons]]
+  #   name = "stackoverflow"
+  #   url = "https://stackoverflow.com/users/userid"
+
+  # Home page info (alternative to profile mode)
+  # [params.homeInfoParams]
+  #   Title = "Hi there!"
+  #   Content = "Welcome to my personal website"
+
+  # Cover image for posts (default)
+  [params.cover]
+    linkFullImages = true
+    responsiveImages = true
+
+  # Edit post link
+  [params.editPost]
+    URL = "https://github.com/boxiXia/boxiXia.github.io/tree/master/content"
+    Text = "Suggest Changes"
+    appendFilePath = true
+
+# Search functionality
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Navigation menu
 [menu]
   [[menu.main]]
     identifier = "posts"
@@ -48,10 +121,60 @@ theme = 'PaperMod'
     weight = 10
 
   [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archive"
+    url = "/archives/"
+    weight = 30
+
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 20
+    weight = 40
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 50
+
+# Taxonomies (tags and categories)
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# Markup configuration
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    noClasses = false
+    style = "monokai"
+
+# Privacy settings
+[privacy]
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.x]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
