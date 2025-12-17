@@ -31,7 +31,6 @@ We examine electrically conductive fabrics as conductive heaters for heat-activa
 
 - [Download PDF](/publications/2019-conductive-fabric-heaters/2019-conductive-fabric-heaters.pdf)
 - [Full text (MDPI)](https://www.mdpi.com/2076-0825/8/1/9)
-- [Open access preprint (arXiv)](https://arxiv.org/abs/2011.06749)
 
 ## Citation
 
