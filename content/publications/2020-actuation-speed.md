@@ -13,12 +13,15 @@ cover_article: true
 
 # Improving the actuation speed and multi-cyclic actuation characteristics of silicone/ethanol soft actuators
 
-**Authors:** Boxi Xia, Aslan Miriyev, Cesar Trujillo, Neil Chen, Mark Cartolano, Shivaniprashant Vartak , Hod Lipson
+**Authors:** B. Xia¹, A. Miriyev¹, C. Trujillo¹, N. Chen¹, M. Cartolano¹, S. Vartak¹, H. Lipson¹
 
+¹Columbia University
 
 **Publication:** *Actuators*, 9(3), 62 (2020)
 
-This is a **Cover Article**
+**Cover Article**
+
+**DOI:** [10.3390/act9030062](https://doi.org/10.3390/act9030062)
 
 ## Abstract
 

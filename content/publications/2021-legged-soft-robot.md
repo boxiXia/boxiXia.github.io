@@ -10,9 +10,15 @@ conference: true
 
 # A legged soft robot platform for dynamic locomotion
 
-**Authors:** B. Xia, J. Fu, H. Zhu, Z. Song, Y. Jiang, & H. Lipson
+**Authors:** B. Xia¹, J. Fu¹, H. Zhu¹, Z. Song¹, Y. Jiang¹, H. Lipson¹
+
+¹Columbia University
 
 **Publication:** *2021 IEEE International Conference on Robotics and Automation (ICRA)*, pp. 11812–11819 (2021)
+
+**Presentation:** Poster
+
+**DOI:** [10.1109/ICRA48506.2021.9561018](https://doi.org/10.1109/ICRA48506.2021.9561018)
 
 ## Abstract
 

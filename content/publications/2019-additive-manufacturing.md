@@ -13,11 +13,15 @@ cover_article: true
 
 # Additive manufacturing of silicone composites for soft actuation
 
-**Authors:**  Aslan Miriyev, Boxi Xia, Jacob Carroll Joseph, and Hod Lipson
+**Authors:** A. Miriyev¹, B. Xia¹, J.C. Joseph¹, H. Lipson¹
+
+¹Columbia University
 
 **Publication:** *3D Printing and Additive Manufacturing*, 6(6), 309–318 (2019)
 
 **Cover Article**
+
+**DOI:** [10.1089/3dp.2019.0116](https://doi.org/10.1089/3dp.2019.0116)
 
 ## Abstract
 

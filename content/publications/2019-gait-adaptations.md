@@ -11,15 +11,20 @@ doi: ""
 
 # Gait adaptations during overground walking and multidirectional oscillations of the visual field in a virtual reality headset
 
-**Authors:** Dario Martelli*, Boxi Xia*, Antonio Prado, Sunil K. Agrawal
+**Authors:** D. Martelli¹*, B. Xia¹*, A. Prado¹, S.K. Agrawal¹,²
 
-*equal contribution
+*Equal contribution
+
+¹Department of Mechanical Engineering, Columbia University
+²Department of Rehabilitation and Regenerative Medicine, Columbia University
 
 **Publication:** *Gait & Posture*, 67, 251–256 (2019)
 
+**DOI:** [10.1016/j.gaitpost.2018.10.029](https://doi.org/10.1016/j.gaitpost.2018.10.029)
+
 ## Abstract
 
-This study investigates gait adaptations during overground walking when the visual field oscillates in multiple directions using a virtual reality headset.
+Virtual reality (VR) has been used to study locomotor adaptability during balance-demanding tasks, but little is known about gait adaptations during overground walking. This study investigated how twelve healthy young adults modified and adapted their gait during overground walking in a virtual environment (VE) with continuous multidirectional perturbations of the visual field while wearing a VR headset. Participants walked on an instrumented walkway in four conditions: real environment, VE, and VE with antero-posterior and medio-lateral visual perturbations. Results showed that participants took shorter strides with higher variability in the VE and during perturbations, with medio-lateral perturbations causing greater effects. Over time, participants adapted by increasing stride length and reducing variability. This paper provided first evidence for visuomotor adaptations during overground walking with a VR headset, representing an initial investigation for developing new VR methods for early detection and remediation of gait deficits in ecological conditions.
 
 ## Paper
 
