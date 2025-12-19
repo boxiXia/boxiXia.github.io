@@ -11,7 +11,7 @@ pagination:
 # Site parameters
 params:
   env: production
-  description: Personal website and blog of Boxi Xia
+  description: Robotics researcher specializing in legged locomotion, humanoid robots, reinforcement learning, and soft robotics
   author: Boxi Xia
 
   # Theme settings
@@ -31,9 +31,17 @@ params:
 
   # SEO and Meta
   keywords:
-    - blog
-    - portfolio
-    - personal website
+    - robotics
+    - humanoid robots
+    - legged locomotion
+    - soft robotics
+    - reinforcement learning
+    - machine learning
+    - robot design
+    - bipedal locomotion
+    - quadrupedal robots
+    - physics simulation
+    - robot control
 
   # Date format
   DateFormat: January 2, 2006
@@ -49,7 +57,7 @@ params:
   profileMode:
     enabled: true
     title: Boxi Xia
-    subtitle: Postdoctoral Researcher | Duke University
+    subtitle: Postdoctoral Researcher | Duke University | Legged Robotics & Machine Learning
     # Add your profile image: create static/images/profile.jpg and uncomment below
     # imageUrl: /images/profile.jpg
     imageTitle: Profile

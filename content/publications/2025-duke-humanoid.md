@@ -11,9 +11,15 @@ status: "Accepted"
 
 # The Duke Humanoid: Design and control for energy-efficient bipedal locomotion using passive dynamics
 
-**Authors:** B. Xia, B. Li, J. Lee, M. Scutari, & B. Chen
+**Authors:** **B. Xia¹**, B. Li¹, J. Lee¹, M. Scutari¹, B. Chen¹
+
+¹Duke University
 
 **Publication:** *IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)* (Accepted)
+
+**Presentation:** Poster
+
+**DOI:** [10.48550/arXiv.2409.19795](https://doi.org/10.48550/arXiv.2409.19795) (arXiv preprint)
 
 ## Abstract
 

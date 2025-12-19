@@ -11,9 +11,13 @@ year: 2019
 
 # Conductive fabric heaters for heat-activated soft actuators
 
-**Authors:** Mark Cartolano, Boxi Xia, Aslan Miriyev and Hod Lipson
+**Authors:** M. Cartolano¹, **B. Xia¹**, A. Miriyev¹, H. Lipson¹
+
+¹Columbia University
 
 **Publication:** *Actuators*, 8(1), 9 (2019)
+
+**DOI:** [10.3390/act8010009](https://doi.org/10.3390/act8010009)
 
 ## Abstract
 
@@ -27,7 +31,6 @@ We examine electrically conductive fabrics as conductive heaters for heat-activa
 
 - [Download PDF](/publications/2019-conductive-fabric-heaters/2019-conductive-fabric-heaters.pdf)
 - [Full text (MDPI)](https://www.mdpi.com/2076-0825/8/1/9)
-- [Open access preprint (arXiv)](https://arxiv.org/abs/2011.06749)
 
 ## Citation
 

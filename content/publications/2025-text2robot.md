@@ -11,9 +11,15 @@ featured: true
 
 # Text2Robot: Evolutionary robot design from text descriptions
 
-**Authors:** Ryan P. Ringel, Zachary S. Charlick, Jiaxun Liu, Boxi Xia, Boyuan Chen
+**Authors:** R.P. Ringel¹, Z.S. Charlick¹, J. Liu¹, **B. Xia¹**, B. Chen¹
+
+¹Duke University
 
 **Publication:** *2025 IEEE International Conference on Robotics and Automation (ICRA)*, pp. 5789–5797 (2025)
+
+**Presentation:** Poster
+
+**DOI:** [10.1109/ICRA55743.2025.11128168](https://doi.org/10.1109/ICRA55743.2025.11128168)
 
 ## Abstract
 
