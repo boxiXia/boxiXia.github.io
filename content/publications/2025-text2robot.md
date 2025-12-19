@@ -11,7 +11,7 @@ featured: true
 
 # Text2Robot: Evolutionary robot design from text descriptions
 
-**Authors:** R.P. Ringel¹, Z.S. Charlick¹, J. Liu¹, B. Xia¹, B. Chen¹
+**Authors:** R.P. Ringel¹, Z.S. Charlick¹, J. Liu¹, **B. Xia¹**, B. Chen¹
 
 ¹Duke University
 

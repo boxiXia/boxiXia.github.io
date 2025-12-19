@@ -10,7 +10,7 @@ conference: true
 
 # A legged soft robot platform for dynamic locomotion
 
-**Authors:** B. Xia¹, J. Fu¹, H. Zhu¹, Z. Song¹, Y. Jiang¹, H. Lipson¹
+**Authors:** **B. Xia¹**, J. Fu¹, H. Zhu¹, Z. Song¹, Y. Jiang¹, H. Lipson¹
 
 ¹Columbia University
 

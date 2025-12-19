@@ -13,7 +13,7 @@ cover_article: true
 
 # Improving the actuation speed and multi-cyclic actuation characteristics of silicone/ethanol soft actuators
 
-**Authors:** B. Xia¹, A. Miriyev¹, C. Trujillo¹, N. Chen¹, M. Cartolano¹, S. Vartak¹, H. Lipson¹
+**Authors:** **B. Xia¹**, A. Miriyev¹, C. Trujillo¹, N. Chen¹, M. Cartolano¹, S. Vartak¹, H. Lipson¹
 
 ¹Columbia University
 

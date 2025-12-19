@@ -13,7 +13,7 @@ cover_article: true
 
 # Additive manufacturing of silicone composites for soft actuation
 
-**Authors:** A. Miriyev¹, B. Xia¹, J.C. Joseph¹, H. Lipson¹
+**Authors:** A. Miriyev¹, **B. Xia¹**, J.C. Joseph¹, H. Lipson¹
 
 ¹Columbia University
 

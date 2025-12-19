@@ -11,7 +11,7 @@ year: 2019
 
 # Conductive fabric heaters for heat-activated soft actuators
 
-**Authors:** M. Cartolano¹, B. Xia¹, A. Miriyev¹, H. Lipson¹
+**Authors:** M. Cartolano¹, **B. Xia¹**, A. Miriyev¹, H. Lipson¹
 
 ¹Columbia University
 

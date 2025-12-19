@@ -11,7 +11,7 @@ year: 2019
 
 # Development of a virtual floor maze test – effects of distal visual cues and correlations with executive function in healthy adults
 
-**Authors:** D. Martelli¹, A. Prado¹, B. Xia¹, J. Verghese², S.K. Agrawal¹,³
+**Authors:** D. Martelli¹, A. Prado¹, **B. Xia¹**, J. Verghese², S.K. Agrawal¹,³
 
 ¹Department of Mechanical Engineering, Columbia University
 ²Department of Neurology, Albert Einstein College of Medicine

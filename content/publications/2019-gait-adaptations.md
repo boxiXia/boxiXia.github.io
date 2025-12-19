@@ -11,7 +11,7 @@ doi: ""
 
 # Gait adaptations during overground walking and multidirectional oscillations of the visual field in a virtual reality headset
 
-**Authors:** D. Martelli¹*, B. Xia¹*, A. Prado¹, S.K. Agrawal¹,²
+**Authors:** D. Martelli¹*, **B. Xia¹***, A. Prado¹, S.K. Agrawal¹,²
 
 *Equal contribution
 
