@@ -12,15 +12,8 @@ featured: true
 thumbnail: /publications/2026-argus/argus_real_robot_blcak.jpg
 doi: 10.1126/scirobotics.aec1725
 website: https://generalroboticslab.com/Argus
+abstract: "We introduce dynamic symmetry — the uniformity of a robot's attainable center-of-mass accelerations — and show that maximizing it consistently improves trajectory tracking, robustness, and energy efficiency across 1,000+ simulated morphologies. We build Argus, a 20-leg spherical robot achieving near-extreme dynamic isotropy, demonstrating orientation-invariant locomotion, agile terrain traversal, and resilience to partial actuator failures."
 ---
-
-**Authors:** J. Liu\*¹, **B. Xia**\*¹, B. Chen¹
-
-¹Duke University, \*These authors contributed equally to this work.
-
-**Publication:** *Science Robotics*, Vol. 11, No. 114, eaec1725 (2026)
-
-**DOI:** [10.1126/scirobotics.aec1725](https://doi.org/10.1126/scirobotics.aec1725)
 
 ## Abstract
 

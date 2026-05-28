@@ -1,0 +1,103 @@
+{{- define "main" }}
+<style>
+.pub-hero{margin-bottom:2rem}
+.pub-hero-badges{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem}
+.pub-hero-badge{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:3px 10px;border-radius:4px;white-space:nowrap}
+.badge-j{background:#1565c0;color:#fff}
+.badge-c{background:#2e7d32;color:#fff}
+.badge-cover{background:#6a1b9a;color:#fff}
+.badge-status{background:var(--secondary);color:var(--theme)}
+.pub-hero h1{font-size:1.4rem;line-height:1.35;margin:.5rem 0 .75rem;font-weight:700}
+.pub-hero-authors{font-size:.88rem;color:var(--secondary);margin-bottom:.25rem;line-height:1.5}
+.pub-hero-authors strong{color:var(--content)}
+.pub-hero-authors sup{font-size:.7em}
+.pub-hero-equal{font-size:.78rem;font-style:italic;color:var(--secondary)}
+.pub-hero-links{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1rem}
+.pub-btn{display:inline-flex;align-items:center;gap:.3rem;font-size:.78rem;font-weight:600;padding:5px 14px;border-radius:5px;text-decoration:none;border:1px solid var(--border);color:inherit;transition:background .12s,border-color .12s}
+.pub-btn:hover{background:var(--primary);border-color:var(--primary);color:var(--theme)}
+.pub-btn svg{flex-shrink:0}
+.pub-divider{border:none;border-top:1px solid var(--border);margin:1.5rem 0}
+</style>
+
+<article class="post-single">
+  <header class="post-header pub-hero">
+    {{- partial "breadcrumbs.html" . }}
+
+    <div class="pub-hero-badges">
+      {{- if .Params.journal }}<span class="pub-hero-badge badge-j">{{ .Params.publication }}</span>
+      {{- else if .Params.conference }}<span class="pub-hero-badge badge-c">{{ or .Params.publication_short .Params.publication }}</span>
+      {{- end }}
+      {{- if .Params.cover_article }}<span class="pub-hero-badge badge-cover">Cover Article</span>{{- end }}
+      {{- if .Params.status }}<span class="pub-hero-badge badge-status">{{ .Params.status }}</span>{{- end }}
+    </div>
+
+    <h1 class="post-title">{{ .Title }}</h1>
+
+    {{- if .Params.authors }}
+    {{- $self := "B. Xia" }}
+    {{- $hasEqual := false }}
+    {{- range .Params.authors }}{{- if strings.HasSuffix . "*" }}{{- $hasEqual = true }}{{- end }}{{- end }}
+    <div class="pub-hero-authors">
+      {{- range $i, $a := .Params.authors }}
+        {{- if $i }},&nbsp;{{ end -}}
+        {{- $name := $a | strings.TrimSuffix "*" -}}
+        {{- if eq $name $self }}<strong>{{ $name }}</strong>{{- else }}{{ $name }}{{- end -}}
+        {{- if strings.HasSuffix $a "*" }}<sup>†</sup>{{- end -}}
+      {{- end }}
+    </div>
+    {{- if $hasEqual }}<div class="pub-hero-equal"><sup>†</sup>Equal contribution</div>{{- end }}
+    {{- end }}
+    {{- with .Params.presentation }}<div class="pub-hero-equal" style="margin-top:.15rem">Presentation: {{ . }}</div>{{- end }}
+
+    <div class="pub-hero-links">
+      {{- if .Params.pdf }}
+      <a class="pub-btn" href="{{ .Params.pdf }}">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        PDF
+      </a>
+      {{- end }}
+      {{- if .Params.doi }}
+      <a class="pub-btn" href="https://doi.org/{{ .Params.doi }}" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        DOI
+      </a>
+      {{- end }}
+      {{- if .Params.arxiv }}
+      <a class="pub-btn" href="{{ .Params.arxiv }}" target="_blank" rel="noopener">arXiv</a>
+      {{- end }}
+      {{- if .Params.website }}
+      <a class="pub-btn" href="{{ .Params.website }}" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Project Page
+      </a>
+      {{- end }}
+      {{- if .Params.code }}
+      <a class="pub-btn" href="{{ .Params.code }}" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        Code
+      </a>
+      {{- end }}
+    </div>
+  </header>
+
+  <hr class="pub-divider">
+
+  {{- if (.Param "ShowToc") }}
+  {{- partial "toc.html" . }}
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+  </footer>
+</article>
+{{- end }}

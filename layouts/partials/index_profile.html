@@ -1,0 +1,138 @@
+<div class="profile">
+    {{- with site.Params.profileMode }}
+    <div class="profile_inner">
+        {{- if .imageUrl -}}
+        {{- $img := "" }}
+        {{- if not (urls.Parse .imageUrl).IsAbs }}
+            {{- $img = resources.Get .imageUrl }}
+        {{- end }}
+        {{- if $img }}
+            {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+            {{- if hugo.IsExtended -}}
+                {{- $processableFormats = $processableFormats | append "webp" -}}
+            {{- end -}}
+            {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+            {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
+                {{- if (not (and (not .imageHeight) (not .imageWidth))) }}
+                    {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
+                {{- else if .imageHeight }}
+                    {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
+                {{ else if .imageWidth }}
+                    {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
+                {{ else }}
+                    {{- $img = $img.Resize "150x150" }}
+                {{- end }}
+            {{- end }}
+            <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        {{- else }}
+        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        {{- end }}
+        {{- end }}
+        <h1>{{ .title | default site.Title | markdownify }}</h1>
+        <span>{{ .subtitle | markdownify }}</span>
+        {{- partial "social_icons.html" -}}
+
+        {{- with .buttons }}
+        <div class="buttons">
+            {{- range . }}
+            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}">
+                <span class="button-inner">
+                    {{ .name }}
+                    {{- if (findRE "://" .url) }}&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                    {{- end }}
+                </span>
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+    {{- end}}
+</div>
+
+<style>
+.home-bio{max-width:640px;margin:1.75rem auto 0;font-size:.94rem;line-height:1.7;color:var(--content);text-align:center}
+.home-bio a{color:inherit;border-bottom:1px solid var(--border)}
+.home-bio a:hover{border-color:var(--primary);color:var(--primary)}
+
+.home-section-hdr{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--secondary);border-bottom:1px solid var(--border);padding-bottom:.4rem;margin:2.5rem 0 1rem}
+
+/* News */
+.home-news{display:flex;flex-direction:column;gap:.5rem;margin-bottom:2rem}
+.home-news-item{display:flex;gap:.75rem;align-items:baseline;font-size:.85rem;line-height:1.5}
+.home-news-date{flex-shrink:0;font-size:.72rem;font-weight:600;color:var(--secondary);white-space:nowrap;min-width:70px}
+.home-news-text{color:var(--content)}
+.home-news-text a{color:inherit;border-bottom:1px solid var(--border)}
+.home-news-text a:hover{border-color:var(--primary);color:var(--primary)}
+
+/* Featured research */
+.home-feat-list{display:flex;flex-direction:column;gap:.75rem;margin-bottom:2rem}
+.home-feat-card{display:flex;gap:1rem;padding:.85rem 1rem;border:1px solid var(--border);border-radius:8px;background:var(--entry);border-left:3px solid var(--primary);text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s}
+.home-feat-card:hover{border-color:var(--primary);box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.home-feat-thumb{flex-shrink:0;width:90px}
+.home-feat-thumb img{width:90px;height:64px;object-fit:cover;border-radius:4px;display:block}
+.home-feat-body{flex:1;min-width:0}
+.home-feat-venue{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#fff;background:#1565c0;padding:1px 6px;border-radius:3px;display:inline-block;margin-bottom:.3rem}
+.home-feat-venue.conf{background:#2e7d32}
+.home-feat-title{font-size:.88rem;font-weight:600;line-height:1.35;margin:.1rem 0 .3rem;color:inherit}
+.home-feat-abstract{font-size:.78rem;color:var(--secondary);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media(max-width:480px){.home-feat-thumb{display:none}}
+</style>
+
+<p class="home-bio">
+I build robots that learn to act in the physical world, from the mechanical hardware up through sim-to-real reinforcement learning. My focus spans humanoids, quadrupeds, soft robots, and generative AI for robot design. I hold a Ph.D. from Columbia University (advised by <a href="https://www.hodlipson.com/" target="_blank" rel="noopener">Prof. Hod Lipson</a>) and am a postdoctoral researcher at <a href="https://generalroboticslab.com/" target="_blank" rel="noopener">Duke University</a> in the General Robotics Lab, advised by <a href="https://boyuan.space/" target="_blank" rel="noopener">Prof. Boyuan Chen</a>.
+</p>
+
+{{- /* News Section */}}
+<div class="home-section-hdr">News</div>
+<div class="home-news">
+  <div class="home-news-item">
+    <span class="home-news-date">2026</span>
+    <span class="home-news-text"><a href="/publications/2026-argus/">Argus paper</a> published in <em>Science Robotics</em> — dynamic symmetry enables orientation-invariant locomotion in a 20-leg spherical robot.</span>
+  </div>
+  <div class="home-news-item">
+    <span class="home-news-date">Sep 2025</span>
+    <span class="home-news-text"><a href="/publications/2025-duke-humanoid/">Duke Humanoid</a> accepted at IROS 2025 — passive dynamics RL reduces cost of transport by 31% on real hardware.</span>
+  </div>
+  <div class="home-news-item">
+    <span class="home-news-date">May 2025</span>
+    <span class="home-news-text"><a href="/publications/2025-text2robot/">Text2Robot</a> published at ICRA 2025 — generative AI designs and manufactures walking quadrupeds from text descriptions.</span>
+  </div>
+  <div class="home-news-item">
+    <span class="home-news-date">2025</span>
+    <span class="home-news-text">Named inventor on Duke University provisional patent DU8960PROV (Argusbot).</span>
+  </div>
+</div>
+
+{{- /* Featured Publications */}}
+{{- $featured := where site.RegularPages "Params.featured" true }}
+{{- $featured = $featured.ByDate.Reverse }}
+{{- if $featured }}
+<div class="home-section-hdr">Selected Publications</div>
+<div class="home-feat-list">
+  {{- range $featured }}
+  <a class="home-feat-card" href="{{ .Permalink }}">
+    {{- if .Params.thumbnail }}
+    <div class="home-feat-thumb">
+      <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" loading="lazy">
+    </div>
+    {{- end }}
+    <div class="home-feat-body">
+      <span class="home-feat-venue{{- if .Params.conference }} conf{{- end }}">
+        {{- if .Params.conference }}{{ or .Params.publication_short .Params.publication }}{{- else }}{{ .Params.publication }}{{- end }}
+      </span>
+      <div class="home-feat-title">{{ .Title }}</div>
+      {{- if .Params.abstract }}<div class="home-feat-abstract">{{ .Params.abstract }}</div>{{- end }}
+    </div>
+  </a>
+  {{- end }}
+</div>
+<p style="text-align:right;margin:-1rem 0 2rem"><a href="/publications/" style="font-size:.82rem;color:var(--secondary);text-decoration:none;border-bottom:1px solid var(--border)">View all publications →</a></p>
+{{- end }}

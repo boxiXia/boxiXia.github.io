@@ -19,13 +19,13 @@ params:
   disableThemeToggle: false
 
   # Display settings
-  ShowReadingTime: true
-  ShowWordCount: true
-  ShowShareButtons: true
+  ShowReadingTime: false
+  ShowWordCount: false
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  ShowRssButtonInSectionTermList: true
+  ShowRssButtonInSectionTermList: false
   ShowToc: true
   TocOpen: false
 
@@ -102,11 +102,11 @@ params:
     linkFullImages: true
     responsiveImages: true
 
-  # Edit post link
-  editPost:
-    URL: https://github.com/boxiXia/boxiXia.github.io/tree/master/content
-    Text: Suggest Changes
-    appendFilePath: true
+  # Edit post link - disabled (not useful for academic portfolio)
+  # editPost:
+  #   URL: https://github.com/boxiXia/boxiXia.github.io/tree/master/content
+  #   Text: Suggest Changes
+  #   appendFilePath: true
 
 # Search functionality
 outputs:

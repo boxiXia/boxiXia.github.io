@@ -8,22 +8,12 @@ issue: "6"
 pages: "309–318"
 year: 2019
 journal: true
-featured: true
 cover_article: true
 thumbnail: /publications/2019-additive-manufacturing/preview.jpg
 doi: 10.1089/3dp.2019.0116
 pdf: /publications/2019-additive-manufacturing/2019-additive-manufacturing.pdf
+abstract: "We present a multimaterial printer and associated processes for in situ fabrication of silicones and silicone-based elastomer composites for soft actuators. Rheological study reveals conditions for continuous 3D printing of silicone rubber and silicone/ethanol composite. Anisotropic mechanical properties enable design of functional characteristics by print modality, demonstrating single-job additive manufacturing of multimaterial soft actuators."
 ---
-
-**Authors:** A. Miriyev¹, **B. Xia¹**, J.C. Joseph¹, H. Lipson¹
-
-¹Columbia University
-
-**Publication:** *3D Printing and Additive Manufacturing*, 6(6), 309–318 (2019)
-
-**Cover Article**
-
-**DOI:** [10.1089/3dp.2019.0116](https://doi.org/10.1089/3dp.2019.0116)
 
 ## Abstract
 

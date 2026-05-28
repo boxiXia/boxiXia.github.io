@@ -27,6 +27,12 @@
       {{- if $hasEqual }} <span class="pub-equal">(*equal contribution)</span>{{- end }}
     </div>
     {{- end }}
+    {{- if .Params.abstract }}
+    <details class="pub-abstract">
+      <summary>Abstract</summary>
+      <p>{{ .Params.abstract }}</p>
+    </details>
+    {{- end }}
     <div class="pub-links">
       <a class="pub-link" href="{{ .Permalink }}">Details</a>
       {{- if .Params.pdf }}<a class="pub-link" href="{{ .Params.pdf }}">PDF</a>{{- end }}

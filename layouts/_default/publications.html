@@ -18,10 +18,17 @@
 .pub-title a:hover{color:var(--primary);text-decoration:underline}
 .pub-authors{font-size:.8rem;color:var(--secondary);margin-bottom:.45rem}
 .pub-equal{font-size:.72rem;font-style:italic}
+.pub-abstract{margin:.4rem 0 .5rem;font-size:.8rem}
+.pub-abstract summary{cursor:pointer;color:var(--secondary);font-style:italic;user-select:none;list-style:none;display:flex;align-items:center;gap:.3rem}
+.pub-abstract summary::before{content:"▶";font-size:.6rem;transition:transform .15s;flex-shrink:0}
+.pub-abstract[open] summary::before{transform:rotate(90deg)}
+.pub-abstract summary::-webkit-details-marker{display:none}
+.pub-abstract p{margin:.5rem 0 0;color:var(--secondary);line-height:1.55;padding-left:.9rem}
 .pub-links{display:flex;gap:.4rem;flex-wrap:wrap}
 .pub-link{font-size:.72rem;padding:2px 9px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:inherit}
 .pub-link:hover{background:var(--primary);color:var(--theme);border-color:var(--primary)}
 .pub-section-hdr{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--secondary);border-bottom:1px solid var(--border);padding-bottom:.35rem;margin:2rem 0 .75rem}
+.pub-year-hdr{font-size:.72rem;font-weight:700;color:var(--secondary);margin:1.25rem 0 .5rem .1rem;letter-spacing:.04em}
 @media(max-width:540px){.pub-thumb{display:none}}
 </style>
 
@@ -37,15 +44,34 @@
 
 {{- with $journals }}
 <div class="pub-section-hdr">Journal Articles</div>
-<div class="pub-list">
-  {{- range . }}{{ partial "pub-card.html" . }}{{ end }}
-</div>
+{{- $years := slice }}
+{{- range . }}{{- $y := string .Params.year }}{{- if not (in $years $y) }}{{- $years = $years | append $y }}{{- end }}{{- end }}
+{{- range $years }}
+  {{- $yr := . }}
+  {{- $group := where $journals "Params.year" (int $yr) }}
+  {{- if $group }}
+  <div class="pub-year-hdr">{{ $yr }}</div>
+  <div class="pub-list">
+    {{- range $group }}{{ partial "pub-card.html" . }}{{ end }}
+  </div>
+  {{- end }}
+{{- end }}
 {{- end }}
 
 {{- with $conferences }}
 <div class="pub-section-hdr">Conference Papers</div>
-<div class="pub-list">
-  {{- range . }}{{ partial "pub-card.html" . }}{{ end }}
-</div>
+{{- $years := slice }}
+{{- range . }}{{- $y := string .Params.year }}{{- if not (in $years $y) }}{{- $years = $years | append $y }}{{- end }}{{- end }}
+{{- range $years }}
+  {{- $yr := . }}
+  {{- $group := where $conferences "Params.year" (int $yr) }}
+  {{- if $group }}
+  <div class="pub-year-hdr">{{ $yr }}</div>
+  <div class="pub-list">
+    {{- range $group }}{{ partial "pub-card.html" . }}{{ end }}
+  </div>
+  {{- end }}
 {{- end }}
+{{- end }}
+
 {{- end }}

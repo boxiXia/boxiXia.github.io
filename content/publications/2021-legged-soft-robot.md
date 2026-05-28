@@ -11,17 +11,10 @@ doi: 10.1109/ICRA48506.2021.9561018
 pdf: /publications/2021-legged-soft-robot/2021-legged-soft-robot.pdf
 thumbnail: /publications/2021-legged-soft-robot/flexipod_at_columbia.jpg
 code: https://github.com/boxiXia/FlexipodHardware
+presentation: "Poster"
+featured: true
+abstract: "We present Flexipod, an open-source untethered quadrupedal soft robot platform for dynamic locomotion. The robot is 80 vol.% soft with 3D-printed gyroid-infill flexible legs that passively stabilize on multi-terrain environments. With gaits tuned in a CUDA-accelerated soft-body simulator, the real robot achieves 0.9 m/s (2.5 body lengths/sec) — faster than most untethered legged soft robots — and can execute backflips."
 ---
-
-**Authors:** **B. Xia¹**, J. Fu¹, H. Zhu¹, Z. Song¹, Y. Jiang¹, H. Lipson¹
-
-¹Columbia University, Creative Machines Lab
-
-**Publication:** *2021 IEEE International Conference on Robotics and Automation (ICRA)*, pp. 11812–11819 (2021)
-
-**Presentation:** Poster
-
-**DOI:** [10.1109/ICRA48506.2021.9561018](https://doi.org/10.1109/ICRA48506.2021.9561018)
 
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin:1.5em 0">
   <img src="/publications/2021-legged-soft-robot/flexipod_at_columbia.jpg" alt="Flexipod at Columbia University" style="width:100%;height:auto;display:block;border-radius:4px">

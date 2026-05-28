@@ -13,17 +13,9 @@ doi: 10.48550/arXiv.2409.19795
 arxiv: https://arxiv.org/abs/2409.19795
 pdf: /publications/2025-duke-humanoid/2025-duke-humanoid.pdf
 code: https://github.com/generalroboticslab/DukeHumanoidv1
+presentation: "Poster"
+abstract: "We present the Duke Humanoid, an open-source 10-DOF child-sized bipedal robot designed for energy-efficient locomotion using passive dynamics. We develop a reinforcement learning policy deployable zero-shot on hardware for velocity-tracking walking, and propose an end-to-end RL algorithm that encourages passive dynamics — reducing cost of transport by up to 50% in simulation and 31% in real-world tests."
 ---
-
-**Authors:** **B. Xia¹**, B. Li¹, J. Lee¹, M. Scutari¹, B. Chen¹
-
-¹Duke University
-
-**Publication:** *IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)* (Accepted)
-
-**Presentation:** Poster
-
-**DOI:** [10.48550/arXiv.2409.19795](https://doi.org/10.48550/arXiv.2409.19795) (arXiv preprint)
 
 ## Abstract
 

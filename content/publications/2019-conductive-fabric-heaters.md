@@ -11,15 +11,8 @@ journal: true
 doi: 10.3390/act8010009
 pdf: /publications/2019-conductive-fabric-heaters/2019-conductive-fabric-heaters.pdf
 thumbnail: /publications/2019-conductive-fabric-heaters/fig1.jpg
+abstract: "We examine electrically conductive fabrics as Joule heaters for silicone/ethanol heat-activated soft actuators. A stretchable kirigami-based Thermionyx fabric design withstands up to 195 °C and 30 W, enabling cyclic heating to 80 °C and linear actuation strain exceeding 30% — superior to traditional Ni-Cr wire coils and suitable for diverse thermally-driven robotic applications."
 ---
-
-**Authors:** M. Cartolano¹, **B. Xia¹**, A. Miriyev¹, H. Lipson¹
-
-¹Department of Mechanical Engineering, Columbia University
-
-**Publication:** *Actuators*, 8(1), 9 (2019)
-
-**DOI:** [10.3390/act8010009](https://doi.org/10.3390/act8010009)
 
 ## Highlights
 

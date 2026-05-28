@@ -14,17 +14,9 @@ pdf: /publications/2025-text2robot/2025-text2robot.pdf
 website: https://generalroboticslab.com/Text2Robot
 code: https://github.com/generalroboticslab/Text2Robot
 thumbnail: /publications/2025-text2robot/text2robot_Fig_Teaser.png
+presentation: "Poster"
+abstract: "Text2Robot converts user text descriptions into physical quadrupedal robots. Within minutes, text-to-3D models initialize diverse morphologies; within a day, geometric processing and body-control co-optimization produce a walking robot that accounts for real-world electronics and manufacturability. The framework enables rapid prototyping and opens new opportunities for generative robot design."
 ---
-
-**Authors:** R.P. Ringel¹, Z.S. Charlick¹, J. Liu¹, **B. Xia¹**, B. Chen¹
-
-¹Duke University
-
-**Publication:** *2025 IEEE International Conference on Robotics and Automation (ICRA)*, pp. 5789–5797 (2025)
-
-**Presentation:** Poster
-
-**DOI:** [10.1109/ICRA55743.2025.11128168](https://doi.org/10.1109/ICRA55743.2025.11128168)
 
 ## Abstract
 

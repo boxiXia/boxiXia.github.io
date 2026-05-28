@@ -8,22 +8,12 @@ issue: "3"
 pages: "62"
 year: 2020
 journal: true
-featured: true
 cover_article: true
 thumbnail: /publications/2020-actuation-speed/preview.png
 doi: 10.3390/act9030062
 pdf: /publications/2020-actuation-speed/2020-actuation-speed.pdf
+abstract: "Adding 8 wt.% diamond nanoparticle filler increases the thermal conductivity of silicone/ethanol soft actuators from 0.190 to 0.212 W/mK, improving actuation speed and cycle count without affecting mechanical properties. An LSTM neural network successfully predicts actuation force in multi-cyclic experiments, enabling computational modeling of long-term actuator behavior."
 ---
-
-**Authors:** **B. Xia¹**, A. Miriyev¹, C. Trujillo¹, N. Chen¹, M. Cartolano¹, S. Vartak¹, H. Lipson¹
-
-¹Columbia University
-
-**Publication:** *Actuators*, 9(3), 62 (2020)
-
-**Cover Article**
-
-**DOI:** [10.3390/act9030062](https://doi.org/10.3390/act9030062)
 
 ## Abstract
 

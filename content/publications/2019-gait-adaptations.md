@@ -10,18 +10,8 @@ journal: true
 doi: 10.1016/j.gaitpost.2018.10.029
 pdf: /publications/2019-gait-adaptations/2019-gait-adaptations.pdf
 thumbnail: /publications/2019-gait-adaptations/fig1.jpg
+abstract: "Twelve healthy adults walked overground in a virtual environment with continuous multidirectional visual-field perturbations via a VR headset. Participants took shorter strides with higher variability; medio-lateral perturbations caused greater effects than antero-posterior ones. Over time, participants adapted by increasing stride length and reducing variability — providing first evidence of visuomotor adaptation during overground walking with a VR headset."
 ---
-
-**Authors:** D. Martelli¹*, **B. Xia¹***, A. Prado¹, S.K. Agrawal¹,²
-
-*Equal contribution
-
-¹Department of Mechanical Engineering, Columbia University
-²Department of Rehabilitation and Regenerative Medicine, Columbia University
-
-**Publication:** *Gait & Posture*, 67, 251–256 (2019)
-
-**DOI:** [10.1016/j.gaitpost.2018.10.029](https://doi.org/10.1016/j.gaitpost.2018.10.029)
 
 ## Highlights
 

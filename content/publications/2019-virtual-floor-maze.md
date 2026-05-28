@@ -11,17 +11,8 @@ journal: true
 doi: 10.1109/TNSRE.2019.2938103
 pdf: /publications/2019-virtual-floor-maze/2019-virtual-floor-maze.pdf
 thumbnail: /publications/2019-virtual-floor-maze/vr_maze_fig_1.jpg
+abstract: "We developed a virtual reality version of the floor maze test (VR-FMT) to assess spatial navigation in 55 healthy adults across real and virtual environments, with and without maze walls. Results show the VR-FMT provides an ecologically valid assessment of spatial navigation that correlates with executive function measures, offering potential for early detection of cognitive and navigational deficits."
 ---
-
-**Authors:** D. Martelli¹, A. Prado¹, **B. Xia¹**, J. Verghese², S.K. Agrawal¹,³
-
-¹Department of Mechanical Engineering, Columbia University
-²Department of Neurology, Albert Einstein College of Medicine
-³Department of Rehabilitation and Regenerative Medicine, Columbia University
-
-**Publication:** *IEEE Transactions on Neural Systems and Rehabilitation Engineering*, 27(10), 2229–2236 (2019)
-
-**DOI:** [10.1109/TNSRE.2019.2938103](https://doi.org/10.1109/TNSRE.2019.2938103)
 
 ## Abstract
 
