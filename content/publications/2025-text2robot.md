@@ -16,8 +16,6 @@ code: https://github.com/generalroboticslab/Text2Robot
 thumbnail: /publications/2025-text2robot/text2robot_Fig_Teaser.png
 ---
 
-# Text2Robot: Evolutionary robot design from text descriptions
-
 **Authors:** R.P. Ringel¹, Z.S. Charlick¹, J. Liu¹, **B. Xia¹**, B. Chen¹
 
 ¹Duke University

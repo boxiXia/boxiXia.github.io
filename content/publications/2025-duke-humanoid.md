@@ -15,8 +15,6 @@ pdf: /publications/2025-duke-humanoid/2025-duke-humanoid.pdf
 code: https://github.com/generalroboticslab/DukeHumanoidv1
 ---
 
-# The Duke Humanoid: Design and control for energy-efficient bipedal locomotion using passive dynamics
-
 **Authors:** **B. Xia¹**, B. Li¹, J. Lee¹, M. Scutari¹, B. Chen¹
 
 ¹Duke University

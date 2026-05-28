@@ -14,8 +14,6 @@ doi: 10.1126/scirobotics.aec1725
 website: https://generalroboticslab.com/Argus
 ---
 
-# Extreme dynamic symmetry enables omnidirectional and multifunctional robots
-
 **Authors:** J. Liu\*¹, **B. Xia**\*¹, B. Chen¹
 
 ¹Duke University, \*These authors contributed equally to this work.
@@ -29,6 +27,27 @@ website: https://generalroboticslab.com/Argus
 Symmetry is a central organizing principle in natural systems, yet its use as a unifying design strategy in robotics has largely remained limited to geometric form. We show that symmetry can instead be leveraged at the level of dynamic actuation capability. We introduce dynamic symmetry, the uniformity of a robot's attainable center-of-mass accelerations, and formalize it through a measure coined as dynamic isotropy. Across more than 1,000 simulated morphologies, we found that higher dynamic symmetry consistently improves trajectory tracking, task success, robustness, resiliency, and energy efficiency, with the benefits becoming most pronounced as dynamic isotropy approaches its theoretical limit. To study this regime systematically, we developed Argus, a family of spherical robots designed to explore the effects of increasing dynamic symmetry. Members of the Argus family vary in their actuation geometry and dynamic symmetry level, while sharing a common architectural principle: radially oriented linear actuators that directly shape the robot's center-of-mass dynamics. Among them, we build a physical 20-leg Argus variant that achieves near-extreme dynamic isotropy and demonstrates orientation-invariant locomotion, agile traversal of cluttered and deformable terrain, rapid self-stabilization, and resilience to partial actuator failures. Its distributed sensing further enables omnidirectional perception and object interaction during continuous motion. These results show that designing robots for symmetry not only in morphology but also in their attainable dynamics provides a powerful and general pathway toward agility, robustness, and multifunctionality in uncertain terrestrial and extraterrestrial environments.
 
 {{< youtube Nd-I4YNQEuY >}}
+
+## Overview
+
+<img src="/publications/2026-argus/argus_video_wall.gif" alt="Argus demo wall — locomotion, terrain, manipulation" style="width:100%;height:auto;display:block;margin:1em 0;border-radius:4px">
+
+## Simulation Demos
+
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;margin:1em 0">
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Base Locomotion</p>
+    <img src="/publications/2026-argus/argus_base_demo.gif" alt="Argus base locomotion demo" style="width:100%;height:auto;display:block;border-radius:4px">
+  </div>
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Object Pushing</p>
+    <img src="/publications/2026-argus/object_pushing_demo.gif" alt="Argus object pushing demo" style="width:100%;height:auto;display:block;border-radius:4px">
+  </div>
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Object Tracking</p>
+    <img src="/publications/2026-argus/object_tracking_demo.gif" alt="Argus object tracking demo" style="width:100%;height:auto;display:block;border-radius:4px">
+  </div>
+</div>
 
 ## Photos
 

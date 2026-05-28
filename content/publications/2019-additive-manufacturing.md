@@ -15,8 +15,6 @@ doi: 10.1089/3dp.2019.0116
 pdf: /publications/2019-additive-manufacturing/2019-additive-manufacturing.pdf
 ---
 
-# Additive manufacturing of silicone composites for soft actuation
-
 **Authors:** A. Miriyev¹, **B. Xia¹**, J.C. Joseph¹, H. Lipson¹
 
 ¹Columbia University

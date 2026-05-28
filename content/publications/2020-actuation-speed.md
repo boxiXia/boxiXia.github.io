@@ -15,8 +15,6 @@ doi: 10.3390/act9030062
 pdf: /publications/2020-actuation-speed/2020-actuation-speed.pdf
 ---
 
-# Improving the actuation speed and multi-cyclic actuation characteristics of silicone/ethanol soft actuators
-
 **Authors:** **B. Xia¹**, A. Miriyev¹, C. Trujillo¹, N. Chen¹, M. Cartolano¹, S. Vartak¹, H. Lipson¹
 
 ¹Columbia University

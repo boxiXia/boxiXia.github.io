@@ -13,8 +13,6 @@ thumbnail: /publications/2021-legged-soft-robot/flexipod_at_columbia.jpg
 code: https://github.com/boxiXia/FlexipodHardware
 ---
 
-# A legged soft robot platform for dynamic locomotion
-
 **Authors:** **B. Xia¹**, J. Fu¹, H. Zhu¹, Z. Song¹, Y. Jiang¹, H. Lipson¹
 
 ¹Columbia University, Creative Machines Lab
