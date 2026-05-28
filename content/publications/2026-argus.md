@@ -9,6 +9,9 @@ pages: "eaec1725"
 year: 2026
 journal: true
 featured: true
+thumbnail: /publications/2026-argus/argus_real_robot_blcak.jpg
+doi: 10.1126/scirobotics.aec1725
+website: https://generalroboticslab.com/Argus
 ---
 
 # Extreme dynamic symmetry enables omnidirectional and multifunctional robots

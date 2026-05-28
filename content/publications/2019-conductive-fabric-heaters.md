@@ -7,6 +7,9 @@ volume: "8"
 issue: "1"
 pages: "9"
 year: 2019
+journal: true
+doi: 10.3390/act8010009
+pdf: /publications/2019-conductive-fabric-heaters/2019-conductive-fabric-heaters.pdf
 ---
 
 # Conductive fabric heaters for heat-activated soft actuators

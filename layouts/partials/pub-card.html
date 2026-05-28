@@ -1,0 +1,39 @@
+{{- $self := "B. Xia" -}}
+<div class="pub-card{{- if .Params.featured }} featured{{- end }}">
+  {{- if .Params.thumbnail }}
+  <div class="pub-thumb">
+    <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" loading="lazy">
+  </div>
+  {{- end }}
+  <div class="pub-body">
+    <div class="pub-badges">
+      {{- if .Params.journal }}<span class="pub-badge badge-journal">{{ .Params.publication }}</span>
+      {{- else if .Params.conference }}<span class="pub-badge badge-conference">{{ or .Params.publication_short .Params.publication }}</span>
+      {{- end }}
+      {{- if .Params.cover_article }}<span class="pub-badge badge-cover">Cover Article</span>{{- end }}
+      {{- if .Params.status }}<span class="pub-badge badge-status">{{ .Params.status }}</span>{{- end }}
+    </div>
+    <div class="pub-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+    {{- if .Params.authors }}
+    {{- $hasEqual := false }}
+    {{- range .Params.authors }}{{- if strings.HasSuffix . "*" }}{{- $hasEqual = true }}{{- end }}{{- end }}
+    <div class="pub-authors">
+      {{- range $i, $a := .Params.authors }}
+        {{- if $i }}, {{ end -}}
+        {{- $name := $a | strings.TrimSuffix "*" -}}
+        {{- if eq $name $self }}<strong>{{ $name }}</strong>{{- else }}{{ $name }}{{- end -}}
+        {{- if strings.HasSuffix $a "*" }}<sup>*</sup>{{- end -}}
+      {{- end }}
+      {{- if $hasEqual }} <span class="pub-equal">(*equal contribution)</span>{{- end }}
+    </div>
+    {{- end }}
+    <div class="pub-links">
+      <a class="pub-link" href="{{ .Permalink }}">Details</a>
+      {{- if .Params.pdf }}<a class="pub-link" href="{{ .Params.pdf }}">PDF</a>{{- end }}
+      {{- if .Params.doi }}<a class="pub-link" href="https://doi.org/{{ .Params.doi }}" target="_blank" rel="noopener">DOI</a>{{- end }}
+      {{- if .Params.arxiv }}<a class="pub-link" href="{{ .Params.arxiv }}" target="_blank" rel="noopener">arXiv</a>{{- end }}
+      {{- if .Params.website }}<a class="pub-link" href="{{ .Params.website }}" target="_blank" rel="noopener">Project</a>{{- end }}
+      {{- if .Params.code }}<a class="pub-link" href="{{ .Params.code }}" target="_blank" rel="noopener">Code</a>{{- end }}
+    </div>
+  </div>
+</div>

@@ -7,6 +7,9 @@ volume: "27"
 issue: "10"
 pages: "2229–2236"
 year: 2019
+journal: true
+doi: 10.1109/TNSRE.2019.2938103
+pdf: /publications/2019-virtual-floor-maze/2019-virtual-floor-maze.pdf
 ---
 
 # Development of a virtual floor maze test – effects of distal visual cues and correlations with executive function in healthy adults

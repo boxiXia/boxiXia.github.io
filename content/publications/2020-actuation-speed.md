@@ -7,8 +7,12 @@ volume: "9"
 issue: "3"
 pages: "62"
 year: 2020
+journal: true
 featured: true
 cover_article: true
+thumbnail: /publications/2020-actuation-speed/preview.png
+doi: 10.3390/act9030062
+pdf: /publications/2020-actuation-speed/2020-actuation-speed.pdf
 ---
 
 # Improving the actuation speed and multi-cyclic actuation characteristics of silicone/ethanol soft actuators

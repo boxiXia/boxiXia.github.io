@@ -43,18 +43,44 @@ Developed vision-free end-to-end controllers and model-based locomotion controll
 - Physics simulation (CUDA, position-based dynamics)
 - 3D printing and rapid prototyping
 
-## Professional Recognition
+## Press & Media Coverage
 
-- Featured on Fox News (2025) for Text2Robot research
-- Research Spotlight Talk, Responsible AI Symposium 2025 (Duke University)
-- IEEE Spectrum Robotics coverage (2019) of the Flexipod soft robot
-- Cover articles in *3D Printing and Additive Manufacturing* (2019) and *Actuators* (2020)
+<style>
+.press-list{display:flex;flex-direction:column;gap:.5rem;margin:.75rem 0 1.5rem}
+.press-item{display:flex;align-items:baseline;gap:.75rem;padding:.5rem .75rem;border-left:3px solid var(--border)}
+.press-outlet{font-weight:700;min-width:160px;flex-shrink:0;font-size:.9rem}
+.press-detail{color:var(--secondary);font-size:.88rem;line-height:1.4}
+.press-detail a{color:inherit}
+</style>
+
+<div class="press-list">
+  <div class="press-item">
+    <span class="press-outlet">Fox News</span>
+    <span class="press-detail">Text2Robot: AI automatically designs and 3D-prints walking robots from text descriptions — 2025</span>
+  </div>
+  <div class="press-item">
+    <span class="press-outlet">IEEE Spectrum</span>
+    <span class="press-detail">Coverage of Flexipod soft legged robot achieving high-speed locomotion and backflips — 2019</span>
+  </div>
+  <div class="press-item">
+    <span class="press-outlet">Duke University</span>
+    <span class="press-detail">Research Spotlight Talk, Responsible AI Symposium — 2025</span>
+  </div>
+  <div class="press-item">
+    <span class="press-outlet">3D Printing & Additive Mfg.</span>
+    <span class="press-detail"><a href="https://doi.org/10.1089/3dp.2019.0116">Cover article: Additive manufacturing of silicone composites for soft actuation</a> — 2019</span>
+  </div>
+  <div class="press-item">
+    <span class="press-outlet">Actuators (MDPI)</span>
+    <span class="press-detail"><a href="https://doi.org/10.3390/act9030062">Cover article: Improving actuation speed of silicone/ethanol soft actuators</a> — 2020</span>
+  </div>
+</div>
+
+## Recognition & Honors
+
 - Member of Sigma Xi, The Scientific Research Honor Society
 - Inventor on provisional patent DU8960PROV (Argusbot), Duke University (2024)
-
-## Reviewer Service
-
-Active reviewer for leading robotics conferences and journals including IROS, ICRA, CoRL, IEEE RA-L, and Springer Nature Journals.
+- Active reviewer: IROS, ICRA, CoRL, IEEE RA-L, Springer Nature Journals
 
 ## Contact
 

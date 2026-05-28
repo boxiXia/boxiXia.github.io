@@ -1,12 +1,14 @@
 ---
 title: "Gait adaptations during overground walking and multidirectional oscillations of the visual field in a virtual reality headset"
 date: 2019-01-01
-authors: ["D. Martelli", "B. Xia", "A. Prado", "S.K. Agrawal"]
+authors: ["D. Martelli*", "B. Xia*", "A. Prado", "S.K. Agrawal"]
 publication: "Gait & Posture"
 volume: "67"
 pages: "251–256"
 year: 2019
-doi: ""
+journal: true
+doi: 10.1016/j.gaitpost.2018.10.029
+pdf: /publications/2019-gait-adaptations/2019-gait-adaptations.pdf
 ---
 
 # Gait adaptations during overground walking and multidirectional oscillations of the visual field in a virtual reality headset

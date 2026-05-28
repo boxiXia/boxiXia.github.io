@@ -7,8 +7,12 @@ volume: "6"
 issue: "6"
 pages: "309–318"
 year: 2019
+journal: true
 featured: true
 cover_article: true
+thumbnail: /publications/2019-additive-manufacturing/preview.jpg
+doi: 10.1089/3dp.2019.0116
+pdf: /publications/2019-additive-manufacturing/2019-additive-manufacturing.pdf
 ---
 
 # Additive manufacturing of silicone composites for soft actuation
