@@ -29,7 +29,7 @@ Elastomer composites have proven to be promising functional materials for soft a
 
 ## Paper
 
-<iframe src="/publications/2019-additive-manufacturing/2019-additive-manufacturing.pdf" width="100%" height="800px" style="border: none;"></iframe>
+<object data="/publications/2019-additive-manufacturing/2019-additive-manufacturing.pdf" type="application/pdf" width="100%" height="800px" style="border:none;"><p>PDF cannot be displayed. <a href="/publications/2019-additive-manufacturing/2019-additive-manufacturing.pdf">Download PDF</a></p></object>
 
 ## Links
 

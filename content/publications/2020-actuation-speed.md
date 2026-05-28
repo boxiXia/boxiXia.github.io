@@ -29,7 +29,7 @@ The actuation of silicone/ethanol soft composite material-actuators is based on 
 
 ## Paper
 
-<iframe src="/publications/2020-actuation-speed/2020-actuation-speed.pdf" width="100%" height="800px" style="border: none;"></iframe>
+<object data="/publications/2020-actuation-speed/2020-actuation-speed.pdf" type="application/pdf" width="100%" height="800px" style="border:none;"><p>PDF cannot be displayed. <a href="/publications/2020-actuation-speed/2020-actuation-speed.pdf">Download PDF</a></p></object>
 
 ## Links
 

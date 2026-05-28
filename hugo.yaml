@@ -130,10 +130,10 @@ menu:
       name: Publications
       url: /publications/
       weight: 25
-    # - identifier: archives
-    #   name: Archive
-    #   url: /archives/
-    #   weight: 30
+    - identifier: gallery
+      name: Gallery
+      url: /gallery/
+      weight: 30
     - identifier: about
       name: About
       url: /about/

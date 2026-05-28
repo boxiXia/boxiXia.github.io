@@ -30,7 +30,7 @@ Robot design has traditionally been costly and labor-intensive. Despite advancem
 
 ## Paper
 
-<iframe src="/publications/2025-text2robot/2025-text2robot.pdf" width="100%" height="800px" style="border: none;"></iframe>
+<object data="/publications/2025-text2robot/2025-text2robot.pdf" type="application/pdf" width="100%" height="800px" style="border:none;"><p>PDF cannot be displayed. <a href="/publications/2025-text2robot/2025-text2robot.pdf">Download PDF</a></p></object>
 
 ## Links
 

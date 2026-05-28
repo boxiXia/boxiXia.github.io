@@ -35,10 +35,10 @@ We present the Duke Humanoid, an open-source 10-degrees-of-freedom humanoid, as 
 
 ## Paper
 
-<iframe src="/publications/2025-duke-humanoid/2025-duke-humanoid.pdf" width="100%" height="800px" style="border: none;"></iframe>
+<object data="/publications/2025-duke-humanoid/2025-duke-humanoid.pdf" type="application/pdf" width="100%" height="800px" style="border:none;"><p>PDF cannot be displayed. <a href="/publications/2025-duke-humanoid/2025-duke-humanoid.pdf">Download PDF</a></p></object>
 
 ## poster
-<iframe src="/publications/2025-duke-humanoid/2025-duke-humanoid poster.pdf" width="100%" height="600px" style="border: none;"></iframe>
+<object data="/publications/2025-duke-humanoid/2025-duke-humanoid poster.pdf" type="application/pdf" width="100%" height="600px" style="border:none;"><p>PDF cannot be displayed. <a href="/publications/2025-duke-humanoid/2025-duke-humanoid poster.pdf">Download PDF</a></p></object>
 
 ## Links
 

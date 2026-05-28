@@ -26,7 +26,7 @@ This paper presents an open-source untethered quadrupedal soft robot platform fo
 
 ## Paper
 
-<iframe src="/publications/2021-legged-soft-robot/2021-legged-soft-robot.pdf" width="100%" height="800px" style="border: none;"></iframe>
+<object data="/publications/2021-legged-soft-robot/2021-legged-soft-robot.pdf" type="application/pdf" width="100%" height="800px" style="border:none;"><p>PDF cannot be displayed. <a href="/publications/2021-legged-soft-robot/2021-legged-soft-robot.pdf">Download PDF</a></p></object>
 
 ## Links
 

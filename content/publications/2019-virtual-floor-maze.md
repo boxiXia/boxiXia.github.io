@@ -27,7 +27,7 @@ This study presents the development of a virtual reality version of the floor ma
 
 ## Paper
 
-<iframe src="/publications/2019-virtual-floor-maze/2019-virtual-floor-maze.pdf" width="100%" height="800px" style="border: none;"></iframe>
+<object data="/publications/2019-virtual-floor-maze/2019-virtual-floor-maze.pdf" type="application/pdf" width="100%" height="800px" style="border:none;"><p>PDF cannot be displayed. <a href="/publications/2019-virtual-floor-maze/2019-virtual-floor-maze.pdf">Download PDF</a></p></object>
 
 ## Links
 

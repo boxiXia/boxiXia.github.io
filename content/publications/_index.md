@@ -28,6 +28,13 @@ summary: "Research publications and papers"
 
 ## Journal Articles
 
+### 2026
+
+- **Extreme dynamic symmetry enables omnidirectional and multifunctional robots**
+  Liu, J.\*, Xia, B.\*, & Chen, B. (2026) (\*equal contribution)
+  *Science Robotics*, Vol. 11, No. 114, eaec1725
+  [Read more](/publications/2026-argus/)
+
 ### 2020
 
 - **Improving the actuation speed and multi-cyclic actuation characteristics of silicone/ethanol soft actuators**
