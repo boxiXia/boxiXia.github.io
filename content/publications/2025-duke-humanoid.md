@@ -6,7 +6,6 @@ publication: "IEEE/RSJ International Conference on Intelligent Robots and System
 year: 2025
 conference: true
 featured: true
-status: "Accepted"
 publication_short: "IROS 2025"
 thumbnail: /publications/2025-duke-humanoid/graphical%20abstract.png
 doi: 10.48550/arXiv.2409.19795
