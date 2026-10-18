@@ -24,10 +24,10 @@ hideMeta: true
 </div>
 
 <div class="gal-section">
-<h3><a href="/publications/2026-duke-humanoid-v2/">Duke Humanoid v2</a></h3>
+<h3><a href="/publications/2026-vrw-humanoid/">Duke Humanoid v2</a></h3>
 <div class="gal-venue">Preprint, 2026</div>
 <div class="gal-grid">
-  <img src="/publications/2026-duke-humanoid-v2/thumb.gif" alt="Duke Humanoid v2 tracking a hand-held target" data-lb="/publications/2026-duke-humanoid-v2/thumb.gif" loading="lazy">
+  <img src="/publications/2026-vrw-humanoid/thumb.gif" alt="Duke Humanoid v2 tracking a hand-held target" data-lb="/publications/2026-vrw-humanoid/thumb.gif" loading="lazy">
 </div>
 </div>
 
@@ -36,6 +36,20 @@ hideMeta: true
 <div class="gal-venue">Preprint, 2026</div>
 <div class="gal-grid">
   <img src="/publications/2026-cartesian-hand/thumb.gif" alt="Cartesian Hand rotating a Rubik's cube" data-lb="/publications/2026-cartesian-hand/thumb.gif" loading="lazy">
+</div>
+</div>
+
+<div class="gal-section">
+<h3><a href="/publications/2026-marble/">MARBLE</a></h3>
+<div class="gal-venue">Preprint, 2026</div>
+<div class="gal-grid">
+  <img src="/publications/2026-marble/thumb.gif" alt="MARBLE rolling toward water" data-lb="/publications/2026-marble/thumb.gif" loading="lazy">
+  <img src="/publications/2026-marble/MARBLE.jpeg" alt="MARBLE" data-lb="/publications/2026-marble/MARBLE.jpeg" loading="lazy">
+  <img src="/publications/2026-marble/close-shot.jpg" alt="MARBLE close-up" data-lb="/publications/2026-marble/close-shot.jpg" loading="lazy">
+  <img src="/publications/2026-marble/land-water-transition.jpg" alt="MARBLE moving from land into water" data-lb="/publications/2026-marble/land-water-transition.jpg" loading="lazy">
+  <img src="/publications/2026-marble/location-boardwalk.jpg" alt="MARBLE on a boardwalk" data-lb="/publications/2026-marble/location-boardwalk.jpg" loading="lazy">
+  <img src="/publications/2026-marble/location-pavilion.jpg" alt="MARBLE at a pavilion" data-lb="/publications/2026-marble/location-pavilion.jpg" loading="lazy">
+  <img src="/publications/2026-marble/obstacle-collision.jpg" alt="MARBLE rolling into an obstacle" data-lb="/publications/2026-marble/obstacle-collision.jpg" loading="lazy">
 </div>
 </div>
 
