@@ -1,0 +1,10 @@
+{{- /* {{< fig src="file.jpg" label="Bold lead" caption="Text" alt="" wide="true" >}}  src is relative to the page's static folder */ -}}
+{{- $src := printf "%s%s" .Page.RelPermalink (.Get "src") -}}
+{{- $file := printf "static%s" $src -}}
+{{- $w := 0 }}{{ $h := 0 }}{{ if fileExists $file }}{{ with imageConfig $file }}{{ $w = .Width }}{{ $h = .Height }}{{ end }}{{ else }}{{ errorf "fig missing: %s" $file }}{{ end -}}
+<figure class="fig{{ if .Get "wide" }} bleed{{ end }}">
+  <img src="{{ $src }}" width="{{ $w }}" height="{{ $h }}" alt="{{ .Get "alt" }}" loading="lazy" decoding="async" data-lb>
+  {{- if or (.Get "label") (.Get "caption") }}
+  <figcaption>{{ with .Get "label" }}<strong>{{ . }}.</strong> {{ end }}{{ with .Get "caption" }}{{ . | safeHTML }}{{ end }}</figcaption>
+  {{- end }}
+</figure>

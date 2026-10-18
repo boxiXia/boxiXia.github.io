@@ -5,7 +5,7 @@
 {{- if .Params.preprint }}{{ $venue = .Params.publication }}
 {{- else }}{{ $venue = .Params.publication }}{{ end }}
 {{- $yr := string .Params.year }}
-<article class="post-single">
+<article class="post-single pub-page">
   <header class="post-header pub-hero">
     <a class="pub-back" href="/publications/">← Publications</a>
     <h1 class="post-title">{{ .Title }}</h1>
@@ -19,7 +19,7 @@
     {{- if $hasEqual }}<div class="pub-hero-note">* Equal contribution</div>{{ end }}
     {{- end }}
 
-    <div class="pr-venue{{ if .Params.venue_bold }} strong{{ end }}"><em>{{ $venue }}</em>{{ if not (in $venue $yr) }}, {{ $yr }}{{ end }}{{ with .Params.presentation }} · {{ . }} presentation{{ end }}{{ if .Params.preprint }}<span class="pr-pre">Not yet peer-reviewed</span>{{ end }}</div>
+    <div class="pr-venue{{ if .Params.venue_bold }} strong{{ end }}"><em>{{ $venue }}</em>{{ if not (in $venue $yr) }}, {{ $yr }}{{ end }}{{ with .Params.presentation }} · {{ . }} presentation{{ end }}</div>
     {{- if or .Params.award .Params.cover_article }}
     <div class="pr-award">{{ with .Params.award }}{{ . }}{{ end }}{{ if and .Params.award .Params.cover_article }} · {{ end }}{{ if .Params.cover_article }}Cover Article{{ end }}</div>
     {{- end }}

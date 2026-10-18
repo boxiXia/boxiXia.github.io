@@ -1,0 +1,15 @@
+{{- /* {{< clip src="name" label="Bold lead" caption="Text" speed="2" steps="3.8:Press trigger|12.1:Rotate" eager="true" manual="true" wide="true" class="" alt="" >}} */ -}}
+{{- $steps := .Get "steps" -}}
+<figure class="clip{{ with .Get "class" }} {{ . }}{{ end }}{{ if .Get "wide" }} bleed{{ end }}">
+  {{ partial "clip-frame.html" (dict "page" .Page "src" (.Get "src") "eager" (.Get "eager") "speed" (.Get "speed") "manual" (.Get "manual") "alt" (.Get "alt") "quad" (.Get "quad")) }}
+  {{- with $steps }}
+  <ol class="clip-steps">
+    {{- range split . "|" }}{{ $p := split . ":" }}{{ $t := float (index $p 0) }}
+    <li><button type="button" data-seek="{{ $t }}"><span class="t">{{ printf "%d:%02d" (int (div $t 60)) (int (mod (int $t) 60)) }}</span>{{ index $p 1 }}</button></li>
+    {{- end }}
+  </ol>
+  {{- end }}
+  {{- if or (.Get "label") (.Get "caption") }}
+  <figcaption>{{ with .Get "label" }}<strong>{{ . }}.</strong> {{ end }}{{ with .Get "caption" }}{{ . | safeHTML }}{{ end }}</figcaption>
+  {{- end }}
+</figure>

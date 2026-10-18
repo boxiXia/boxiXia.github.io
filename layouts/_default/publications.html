@@ -5,28 +5,15 @@
 </header>
 
 {{- $pages := .Pages.ByDate.Reverse }}
-{{- $sections := slice
-  (dict "title" "Journal Articles" "key" "Params.journal")
-  (dict "title" "Conference Papers" "key" "Params.conference")
-  (dict "title" "Workshop Papers" "key" "Params.workshop")
-  (dict "title" "Preprints (not yet peer-reviewed)" "key" "Params.preprint") }}
-
-{{- range $sections }}
-  {{- $title := .title }}
-  {{- $group := where $pages .key true }}
-  {{- if $group }}
+{{- $years := slice }}
+{{- range $pages }}{{ $y := string .Params.year }}{{ if not (in $years $y) }}{{ $years = $years | append $y }}{{ end }}{{ end }}
+{{- range $years }}
+  {{- $yr := . }}
   <section class="pub-section">
-    <div class="sec-hdr">{{ $title }}</div>
-    {{- $years := slice }}
-    {{- range $group }}{{ $y := string .Params.year }}{{ if not (in $years $y) }}{{ $years = $years | append $y }}{{ end }}{{ end }}
-    {{- range $years }}
-      {{- $yr := . }}
-      <div class="pub-year">{{ $yr }}</div>
-      <div class="pub-rows">
-        {{- range where $group "Params.year" (int $yr) }}{{ partial "pub-row.html" (dict "page" . "mode" "compact") }}{{ end }}
-      </div>
-    {{- end }}
+    <div class="sec-hdr">{{ $yr }}</div>
+    <div class="pub-rows">
+      {{- range where $pages "Params.year" (int $yr) }}{{ partial "pub-row.html" (dict "page" . "mode" "compact") }}{{ end }}
+    </div>
   </section>
-  {{- end }}
 {{- end }}
 {{- end }}

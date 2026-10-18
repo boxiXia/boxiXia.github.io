@@ -18,7 +18,7 @@
       {{- range $i, $a := . }}{{ if $i }}, {{ end }}{{ $name := strings.TrimSuffix "*" $a }}{{ if eq $name $self }}<strong>{{ $name }}</strong>{{ else }}{{ $name }}{{ end }}{{ if strings.HasSuffix $a "*" }}<sup>*</sup>{{ end }}{{ end -}}
     </div>
     {{- end }}
-    <div class="pr-venue{{ if $p.Params.venue_bold }} strong{{ end }}"><em>{{ $venue }}</em>{{ if not (in $venue $yr) }}, {{ $yr }}{{ end }}{{ if $p.Params.preprint }}<span class="pr-pre">Not yet peer-reviewed</span>{{ end }}</div>
+    <div class="pr-venue{{ if $p.Params.venue_bold }} strong{{ end }}"><em>{{ $venue }}</em>{{ if not (in $venue $yr) }}, {{ $yr }}{{ end }}</div>
     {{- if or $p.Params.award $p.Params.cover_article }}
     <div class="pr-award">{{ with $p.Params.award }}{{ . }}{{ end }}{{ if and $p.Params.award $p.Params.cover_article }} · {{ end }}{{ if $p.Params.cover_article }}Cover Article{{ end }}</div>
     {{- end }}

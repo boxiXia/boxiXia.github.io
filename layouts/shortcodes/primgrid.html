@@ -1,0 +1,24 @@
+{{- /* Primitive grid with Hardware / Simulation / Diagrams views.
+     {{< primgrid data="cartesian_hand.primitives" >}} */ -}}
+{{- $parts := split (.Get "data") "." -}}
+{{- $items := index site.Data (index $parts 0) (index $parts 1) -}}
+{{- $page := .Page -}}
+{{- $views := slice (dict "k" "real" "label" "Hardware") (dict "k" "sim" "label" "Simulation") (dict "k" "diagram" "label" "Diagrams") -}}
+<div class="cgrid bleed" data-tabs>
+  <div class="chips" role="tablist">
+    {{- range $i, $v := $views }}
+    <button type="button" data-view="{{ $v.k }}" aria-pressed="{{ if eq $i 0 }}true{{ else }}false{{ end }}">{{ $v.label }}</button>
+    {{- end }}
+  </div>
+  {{- range $i, $v := $views }}
+  <div class="tiles prim" data-panel="{{ $v.k }}"{{ if ne $i 0 }} hidden{{ end }}>
+    {{- range $items }}
+    {{- $still := or (eq $v.k "diagram") (and (eq $v.k "real") .real_still) }}
+    <figure class="tile">
+      {{ partial "clip-frame.html" (dict "page" $page "src" (index . $v.k) "still" $still) }}
+      <figcaption><span class="tile-code">{{ .code }}</span><span class="tile-name">{{ .name }}</span></figcaption>
+    </figure>
+    {{- end }}
+  </div>
+  {{- end }}
+</div>

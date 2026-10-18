@@ -43,6 +43,8 @@ We present the Duke Humanoid, an open-source 10-degrees-of-freedom humanoid, as 
 - [Download PDF](/publications/2025-duke-humanoid/2025-duke-humanoid.pdf)
 - [Official Schedule](https://ras.papercept.net/conferences/conferences/IROS25/program/IROS25_ContentListWeb_1.html#tudt20_02)
 - [Open access (arXiv)](https://arxiv.org/abs/2409.19795)
+- [Code](https://github.com/generalroboticslab/DukeHumanoidv1)
+- [Hardware wiki (Notion)](https://app.notion.com/p/Duke-Humanoid-V1-38d54de887d1403a82f2367490c45b89)
 
 ## Citation
 

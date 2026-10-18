@@ -1,0 +1,53 @@
+# Clip grids for content/publications/2026-cartesian-hand.md.
+# src is the file name (no extension) in static/publications/2026-cartesian-hand/clips/.
+
+primitives:
+  - {code: "0",     name: "Static hold",                 real: prim-real-00-static-hold, real_still: true, sim: prim-sim-00-static-hold, diagram: diag-00-static-hold}
+  - {code: "1",     name: "Point push/pull",             real: prim-real-01-point-push-pull, sim: prim-sim-01-point-push-pull, diagram: diag-01-point-push-pull}
+  - {code: "2",     name: "Horizontal open/close",       real: prim-real-02-horizontal-open-close, sim: prim-sim-02-horizontal-open-close, diagram: diag-02-horizontal-open-close}
+  - {code: "3",     name: "Vertical open/close",         real: prim-real-03-vertical-open-close, sim: prim-sim-03-vertical-open-close, diagram: diag-03-vertical-open-close}
+  - {code: "4",     name: "Pivot/translate",             real: prim-real-04-pivot-translate, sim: prim-sim-04-pivot-translate, diagram: diag-04-pivot-translate}
+  - {code: "4",     name: "Twist",                       real: prim-real-05-twist, sim: prim-sim-05-twist, diagram: diag-05-twist}
+  - {code: "4+4",   name: "Dual rotate",                 real: prim-real-06-dual-rotate, sim: prim-sim-06-dual-rotate, diagram: diag-06-dual-rotate}
+  - {code: "4+4",   name: "Dual translate",              real: prim-real-07-dual-translate, sim: prim-sim-07-dual-translate, diagram: diag-07-dual-translate}
+  - {code: "2+2",   name: "Dual grasp",                  real: prim-real-08-dual-grasp, sim: prim-sim-08-dual-grasp, diagram: diag-08-dual-grasp}
+  - {code: "2+3",   name: "Squeeze-lift/lower",          real: prim-real-09-squeeze-lift-lower, sim: prim-sim-09-squeeze-lift-lower, diagram: diag-09-squeeze-lift-lower}
+  - {code: "2+3+4", name: "Squeeze-twist-lift/lower",    real: prim-real-10-squeeze-twist-lift-lower, sim: prim-sim-10-squeeze-twist-lift-lower, diagram: diag-10-squeeze-twist-lift-lower}
+  - {code: "1+1+2", name: "Squeeze-push/pull",           real: prim-real-11-squeeze-push-pull, sim: prim-sim-11-squeeze-push-pull, diagram: diag-11-squeeze-push-pull}
+
+objects:
+  - {src: obj-centrifuge-tube-50ml,       name: "50 mL centrifuge tube",       tag: Cap,           cat: lab}
+  - {src: obj-centrifuge-tube-15ml,       name: "15 mL centrifuge tube",       tag: Cap,           cat: lab}
+  - {src: obj-culture-tube-14ml,          name: "14 mL culture tube",          tag: Cap,           cat: lab}
+  - {src: obj-reagent-bottle-50ml,        name: "50 mL reagent bottle",        tag: Cap,           cat: lab}
+  - {src: obj-reagent-bottle-30ml,        name: "30 mL reagent bottle",        tag: Cap,           cat: lab}
+  - {src: obj-glass-bottle-250ml,         name: "250 mL glass bottle",         tag: Cap,           cat: lab}
+  - {src: obj-rectangular-bottle-160ml,   name: "160 mL rectangular bottle",   tag: Cap,           cat: lab}
+  - {src: obj-dropper-bottle,             name: "Dropper bottle",              tag: Cap,           cat: lab}
+  - {src: obj-well-plate-96,              name: "96-well plate",               tag: Cap,           cat: lab}
+  - {src: obj-petri-dish,                 name: "50 mm petri dish",            tag: Cap,           cat: lab}
+  - {src: obj-marker-pen,                 name: "Marker pen",                  tag: Cap,           cat: household}
+  - {src: obj-glue-stick,                 name: "Glue stick",                  tag: Cap,           cat: household}
+  - {src: obj-child-safe-cap,             name: "Child-safe cap",              tag: Cap,           cat: household}
+  - {src: obj-peanut-butter-jar,          name: "Peanut butter jar",           tag: Cap,           cat: household}
+  - {src: obj-light-bulb,                 name: "Light bulb",                  tag: Cap,           cat: household}
+  - {src: obj-syringe-20ml,               name: "20 mL syringe",               tag: Pump,          cat: lab}
+  - {src: obj-syringe-60ml,               name: "60 mL syringe",               tag: Pump,          cat: lab}
+  - {src: obj-nasal-spray,                name: "Nasal spray",                 tag: Pump,          cat: household}
+  - {src: obj-pipette,                    name: "Single-channel pipette",      tag: Pipette,       cat: lab}
+  - {src: obj-multichannel-pipette,       name: "Multichannel pipette",        tag: Pipette,       cat: lab}
+  - {src: obj-scissors,                   name: "Scissors",                    tag: Two-handle,    cat: household}
+  - {src: obj-chopsticks,                 name: "Chopsticks",                  tag: Two-handle,    cat: household}
+  - {src: obj-pliers,                     name: "Pliers",                      tag: Two-handle,    cat: manufacturing}
+  - {src: obj-cutting-pliers,             name: "Cutting pliers",              tag: Two-handle,    cat: manufacturing}
+  - {src: obj-needle-nose-pliers,         name: "Needle-nose pliers",          tag: Two-handle,    cat: manufacturing}
+  - {src: obj-square-nose-pliers,         name: "Square-nose pliers",          tag: Two-handle,    cat: manufacturing}
+  - {src: obj-spray-bottle,               name: "Spray bottle",                tag: Trigger,       cat: household}
+  - {src: obj-alcohol-bottle,             name: "Alcohol bottle",              tag: Trigger,       cat: household}
+  - {src: obj-butane-torch,               name: "Butane torch",                tag: Trigger,       cat: manufacturing}
+  - {src: obj-impact-driver,              name: "Impact driver",               tag: Trigger,       cat: manufacturing}
+  - {src: obj-drill,                      name: "Drill",                       tag: Trigger,       cat: manufacturing}
+  - {src: obj-manual-screwdriver,         name: "Manual screwdriver",          tag: Screwdriver,   cat: manufacturing}
+  - {src: obj-electric-screwdriver,       name: "Electric screwdriver, small", tag: Screwdriver,   cat: manufacturing}
+  - {src: obj-electric-screwdriver-large, name: "Electric screwdriver, large", tag: Screwdriver,   cat: manufacturing}
+  - {src: obj-whisk,                      name: "Kitchen whisk",               tag: Reorientation, cat: household}

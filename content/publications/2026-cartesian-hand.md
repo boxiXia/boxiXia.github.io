@@ -18,6 +18,25 @@ code: https://github.com/generalroboticslab/Cartesian_Hand
 abstract: "We introduce the Cartesian Hand, a 7-DoF end-effector that combines independent grasping and relative manipulation using only linear motion. Two parallel grippers hold different parts of an object while four translating fingertips move them relative to each other, enabling cap opening, pipetting, pumping, screwdriving, trigger actuation, and in-grasp reorientation across 35 objects, on both a robot arm and a humanoid."
 ---
 
+{{< lead >}}
+{{< clip src="seq-three-objects" eager="true" speed="2" label="Three axes" caption="Closing a jaw pulls the trigger, the separation joint presses the plunger, and fingertip slides twist the cap." steps="3.8:Press trigger|12.1:Rotate plunger|13.8:Press plunger|16.6:Eject tip|21.8:Open cap|28.8:Lift cap|30.2:Close cap" alt="A robot arm with the Cartesian Hand sprays a bottle, uses a pipette, then opens and recloses a centrifuge tube in one run" >}}
+<div class="lead-side">
+{{< fig src="hand-axes-4x3.jpg" label="Linear axes" caption="Two stacked grippers, four sliding fingertips and the gap between the grippers." alt="Close-up of the hand with arrows along each linear axis" >}}
+{{< spec title="Specification" >}}
+Fingertip travel | 65&nbsp;mm
+Gripper and separation travel | 52&nbsp;mm each
+Joint speed | ≈&nbsp;60&nbsp;mm/s
+Static hold, one gripper | 2&nbsp;kg
+Mass | 850&nbsp;g
+Size | ≈&nbsp;166 × 100 × 76&nbsp;mm
+Structure | 3D-printed PLA or nylon
+Cost | ≈&nbsp;$500
+{{< /spec >}}
+</div>
+{{< /lead >}}
+
+{{< lede >}}The **Cartesian Hand holds one part of an object and moves another**, using only joints that slide in straight lines.{{< /lede >}}
+
 ## Abstract
 
 Robotic manipulation has increasingly pursued human-like dexterous hands with many articulated degrees of freedom, offering rich manipulation capabilities at the cost of mechanical and control complexity. At the other extreme, parallel grippers are simple and robust, but provide little ability to manipulate an object after grasping it. Operating articulated objects such as threaded containers, manufacturing tools, and laboratory instruments often requires a second gripper, an external fixture, or coordinated arm motion.
@@ -26,70 +45,51 @@ We introduce the Cartesian Hand, a 7-DoF end-effector that rethinks dexterous ma
 
 We demonstrate cap opening and closing, pipetting, pumping, two-handle manipulation, screwdriving, trigger actuation, and in-grasp reorientation across 35 objects spanning laboratory, manufacturing, and household settings. The same manipulation procedures transfer from a fixed-base robot arm to a humanoid, where we demonstrate bimanual laboratory manipulation using two Cartesian Hands. These results show that versatile in-hand manipulation capability can emerge from a mechanically simple architecture when independent grasping and relative motion are designed directly into the end-effector.
 
-## Video
-
-{{< youtube ktNcPPTPsQE >}}
-
-## Overview
-
-One continuous run: spray bottle, pipette, then centrifuge-tube cap. Closing a jaw pulls the trigger, the separation joint presses the plunger, and fingertip slides twist the cap.
-
-<video src="/publications/2026-cartesian-hand/seq-three-objects.mp4" poster="/publications/2026-cartesian-hand/seq-three-objects.jpg" autoplay muted loop playsinline style="width:100%;height:auto;display:block;margin:1em 0;border-radius:4px"></video>
-
-| Specification | Value |
-| --- | --- |
-| Fingertip travel | 65 mm |
-| Gripper and separation travel | 52 mm each |
-| Joint speed | ≈ 60 mm/s |
-| Static hold, one gripper | 2 kg |
-| Mass | 850 g |
-| Size | ≈ 166 × 100 × 76 mm |
-| Structure | 3D-printed PLA or nylon |
-| Cost | ≈ $500 |
-
 ## Kinematics
 
 All seven joints are prismatic, so each joint moves its fingertips along a fixed axis, the same way in any configuration and with no singular poses. Each fingertip point is a fixed linear function of the joints, so the Jacobian is a constant matrix of full rank.
 
-<img src="/publications/2026-cartesian-hand/hand-axes-4x3.jpg" alt="Linear axes: two stacked grippers, four sliding fingertips, and the gap between the grippers" style="width:100%;height:auto;display:block;margin:1em 0;border-radius:4px">
+{{< row cols="3" wide="true" >}}
+{{< clip src="mechanism-exploded" class="framed" label="Inside the hand" caption="The parts that form the two grippers and four sliding fingertips." >}}
+{{< clip src="mechanism-joints" speed="2" label="Independent motion" caption="Fingertips slide, jaws open and close, and the two grippers move apart." >}}
+{{< clip src="mechanism-workspace" speed="2" label="Workspace in motion" caption="Joint travel changes the hand's opening and fingertip positions." >}}
+{{< /row >}}
 
-<video src="/publications/2026-cartesian-hand/mechanism-joints.mp4" poster="/publications/2026-cartesian-hand/mechanism-joints.jpg" autoplay muted loop playsinline style="width:100%;height:auto;display:block;margin:1em 0;border-radius:4px"></video>
+{{< row cols="2" >}}
+{{< fig src="design-cad.jpg" label="Design" caption="Four actuated fingertips, P1 to P4." alt="CAD render of the hand with fingertips P1 to P4 marked" >}}
+{{< fig src="design-kinematics.png" label="Joint frames" caption="Seven prismatic joints, each along a fixed axis." alt="Kinematic diagram of the seven prismatic joints" >}}
+{{< /row >}}
 
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;margin:1em 0">
-  <div>
-    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Design: four actuated fingertips, P1–P4</p>
-    <img src="/publications/2026-cartesian-hand/design-cad.jpg" alt="Cartesian Hand CAD design" style="width:100%;height:auto;display:block;border-radius:4px">
-  </div>
-  <div>
-    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Joint frames: seven prismatic joints</p>
-    <img src="/publications/2026-cartesian-hand/design-kinematics.png" alt="Cartesian Hand joint frames" style="width:100%;height:auto;display:block;border-radius:4px">
-  </div>
-</div>
+{{< row cols="2" >}}
+{{< fig src="workspace-min.jpg" label="Minimum configuration" alt="Fingertip workspace boxes with the hand closed" >}}
+{{< fig src="workspace-max.jpg" label="Maximum configuration" caption="Each fingertip reaches an axis-aligned box: base gripper in orange, auxiliary gripper in blue (mm)." alt="Fingertip workspace boxes with the hand fully open" >}}
+{{< /row >}}
 
-Workspace: each fingertip reaches an axis-aligned box (base gripper orange, auxiliary gripper blue).
+## Primitives
 
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;margin:1em 0">
-  <div>
-    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Minimum configuration</p>
-    <img src="/publications/2026-cartesian-hand/workspace-min.jpg" alt="Workspace at minimum configuration" style="width:100%;height:auto;display:block;border-radius:4px">
-  </div>
-  <div>
-    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Maximum configuration</p>
-    <img src="/publications/2026-cartesian-hand/workspace-max.jpg" alt="Workspace at maximum configuration" style="width:100%;height:auto;display:block;border-radius:4px">
-  </div>
-</div>
+Holding or moving the joints, alone or together, gives a small set of linear motions. Compare each one on the physical hand and in simulation.
 
-## Rubik's Cube Manipulation
+{{< primgrid data="cartesian_hand.primitives" >}}
 
-Within one grasp, the hand alternates between holding the cube, turning a layer and reorienting it.
+## Objects
 
-<video src="/publications/2026-cartesian-hand/demo-rubik.mp4" poster="/publications/2026-cartesian-hand/demo-rubik.jpg" autoplay muted loop playsinline style="width:100%;height:auto;display:block;margin:1em 0;border-radius:4px"></video>
+Objects that share a mechanism share a procedure. A new object keeps the sequence, the controller and the hand, and changes only a few settings such as grasp height, stroke and force limit.
+
+{{< clipgrid data="cartesian_hand.objects" speed="2" filters="lab:Lab|household:Household|manufacturing:Manufacturing" >}}
+
+## Rubik's Cube
+
+{{< clip src="demo-rubik" class="narrow" speed="2" label="Within one grasp" caption="The hand alternates between holding the cube, turning a layer and reorienting it." alt="The hand turns faces of a Rubik's cube and reorients it while holding it" >}}
 
 ## On a Humanoid
 
-Two Cartesian Hands on Duke Humanoid v2: one hand opens a centrifuge tube while the other pipettes into it. The arms position the objects, and the hands do each operation.
+Two Cartesian Hands on Duke Humanoid v2. One hand opens a centrifuge tube while the other pipettes into it. The arms position the objects and the hands do each operation.
 
-<video src="/publications/2026-cartesian-hand/humanoid-bimanual-square.mp4" poster="/publications/2026-cartesian-hand/humanoid-bimanual-square.jpg" autoplay muted loop playsinline style="width:100%;height:auto;display:block;margin:1em 0;border-radius:4px"></video>
+{{< clip src="humanoid-bimanual" class="narrow" speed="2" steps="0:Open cap|11.2:Align tip|16.6:Press plunger|23.1:Return pipette|31:Close cap" label="No shared object" caption="Each hand works its own object, and the arms only position them." alt="A humanoid with a Cartesian Hand on each arm opens a tube, pipettes into it and recaps it" >}}
+
+## Video
+
+{{< youtube ktNcPPTPsQE >}}
 
 ## Links
 
@@ -97,6 +97,7 @@ Two Cartesian Hands on Duke Humanoid v2: one hand opens a centrifuge tube while 
 - [Paper (arXiv)](https://arxiv.org/abs/2609.25696)
 - [PDF](https://arxiv.org/pdf/2609.25696)
 - [Code](https://github.com/generalroboticslab/Cartesian_Hand)
+- [Open-source hardware](https://github.com/generalroboticslab/Cartesian_Hand/tree/main/hardware)
 - [CAD and simulation model](https://github.com/generalroboticslab/Cartesian_Hand/tree/main/assets/cartesian_hand)
 
 ## Citation

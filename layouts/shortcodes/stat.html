@@ -1,0 +1,2 @@
+{{- /* {{< stat from="38%" to="97%" caption="..." >}} */ -}}
+<div class="stat"><div class="stat-num"><span class="from">{{ .Get "from" }}</span><span class="arrow">→</span><span class="to">{{ .Get "to" }}</span></div>{{ with .Get "caption" }}<p>{{ . }}</p>{{ end }}</div>

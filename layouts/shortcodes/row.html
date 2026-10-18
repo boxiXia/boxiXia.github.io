@@ -1,0 +1,2 @@
+{{- /* {{< row cols="2" wide="true" >}} clip / fig shortcodes {{< /row >}} */ -}}
+<div class="media-row cols-{{ .Get "cols" | default "2" }}{{ if .Get "wide" }} bleed{{ end }}{{ with .Get "class" }} {{ . }}{{ end }}">{{ .Inner }}</div>

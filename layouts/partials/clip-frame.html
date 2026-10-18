@@ -1,0 +1,13 @@
+{{- /* One clip: a lazy poster image that main JS swaps for the video when it scrolls near.
+     dict: page, src (name in clips/), still (bool: image only), eager, speed, manual (click to play, with sound), alt */ -}}
+{{- $base := printf "%sclips/%s" .page.RelPermalink .src -}}
+{{- $file := printf "static%s.jpg" $base -}}
+{{- $w := 0 }}{{ $h := 0 -}}
+{{- if fileExists $file }}{{ with imageConfig $file }}{{ $w = .Width }}{{ $h = .Height }}{{ end }}{{ else }}{{ errorf "clip poster missing: %s" $file }}{{ end -}}
+<div class="clip-frame{{ if .manual }} manual{{ end }}"{{ if not .still }} data-clip="{{ $base }}.mp4"{{ end }}>
+  <img src="{{ $base }}.jpg" width="{{ $w }}" height="{{ $h }}" alt="{{ .alt }}" decoding="async"{{ if .eager }} fetchpriority="high"{{ else }} loading="lazy"{{ end }}>
+  {{- with .speed }}<span class="clip-speed">{{ . }}×</span>{{ end }}
+  {{- with .quad }}{{ range $i, $t := split . "|" }}<span class="quad-tag q{{ $i }}">{{ $t }}</span>{{ end }}{{ end }}
+  {{- if .manual }}<button type="button" class="clip-play" aria-label="Play video"></button>{{ end }}
+</div>
+{{- /**/ -}}

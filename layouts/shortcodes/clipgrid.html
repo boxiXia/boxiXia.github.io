@@ -1,0 +1,23 @@
+{{- /* Filterable clip grid from a data file.
+     {{< clipgrid data="cartesian_hand.objects" filters="lab:Lab|household:Household|manufacturing:Manufacturing" speed="2" >}} */ -}}
+{{- $parts := split (.Get "data") "." -}}
+{{- $items := index site.Data (index $parts 0) (index $parts 1) -}}
+{{- $page := .Page }}{{ $speed := .Get "speed" -}}
+<div class="cgrid bleed" data-filterable>
+  {{- with .Get "filters" }}
+  <div class="chips" role="group" aria-label="Filter">
+    <button type="button" data-filter="all" aria-pressed="true">All <span class="n">{{ len $items }}</span></button>
+    {{- range split . "|" }}{{ $f := split . ":" }}
+    <button type="button" data-filter="{{ index $f 0 }}" aria-pressed="false">{{ index $f 1 }} <span class="n">{{ len (where $items "cat" (index $f 0)) }}</span></button>
+    {{- end }}
+  </div>
+  {{- end }}
+  <div class="tiles">
+    {{- range $items }}
+    <figure class="tile" data-cat="{{ .cat }}">
+      {{ partial "clip-frame.html" (dict "page" $page "src" .src "speed" $speed) }}
+      <figcaption><span class="tile-name">{{ .name }}</span>{{ with .tag }}<span class="tile-tag">{{ . }}</span>{{ end }}</figcaption>
+    </figure>
+    {{- end }}
+  </div>
+</div>

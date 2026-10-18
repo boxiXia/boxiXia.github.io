@@ -1,0 +1,11 @@
+{{- /* {{< spec title="Specification" cols="2" >}}
+Key | Value
+{{< /spec >}} */ -}}
+<div class="spec{{ if eq (.Get "cols") "2" }} two{{ end }}{{ if .Get "wide" }} bleed{{ end }}">
+  {{- with .Get "title" }}<p class="spec-title">{{ . }}</p>{{ end }}
+  <div class="spec-rows">
+  {{- range split (trim .Inner "\n ") "\n" }}{{ $kv := split . "|" }}{{ if eq (len $kv) 2 }}
+    <div class="kv"><span class="k">{{ trim (index $kv 0) " " }}</span><span class="v">{{ trim (index $kv 1) " " | safeHTML }}</span></div>
+  {{- end }}{{ end }}
+  </div>
+</div>

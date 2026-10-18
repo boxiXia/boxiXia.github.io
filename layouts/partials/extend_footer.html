@@ -17,3 +17,63 @@
   });
 })();
 </script>
+<script>
+/* Project-page media: clips load only near the viewport and pause when off screen. */
+(function(){
+  var frames=document.querySelectorAll('.clip-frame[data-clip]');
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function video(fr){
+    if(fr._v)return fr._v;
+    var img=fr.querySelector('img'),v=document.createElement('video');
+    var manual=fr.classList.contains('manual');
+    v.muted=!manual;v.defaultMuted=!manual;v.loop=!manual;v.playsInline=true;
+    v.setAttribute('playsinline','');if(!manual)v.setAttribute('muted','');
+    v.preload=manual?'none':'auto';v.poster=img.currentSrc||img.src;
+    if(manual||reduce)v.controls=true;
+    v.src=fr.dataset.clip;fr.insertBefore(v,img.nextSibling);
+    v.addEventListener('playing',function(){fr.classList.add('on');});
+    fr._v=v;return v;
+  }
+  function play(v){var p=v.play();if(p&&p.catch)p.catch(function(){});}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      var fr=e.target;if(fr.classList.contains('manual'))return;
+      if(e.isIntersecting){var v=video(fr);if(!reduce)play(v);}
+      else if(fr._v&&!fr._v.paused)fr._v.pause();
+    });},{rootMargin:'600px 0px'});
+    frames.forEach(function(fr){io.observe(fr);});
+  }else{frames.forEach(function(fr){if(!fr.classList.contains('manual'))play(video(fr));});}
+  /* click-to-play clips (long takes with sound) */
+  document.querySelectorAll('.clip-frame.manual .clip-play').forEach(function(b){
+    b.addEventListener('click',function(){var fr=b.parentNode,v=video(fr);fr.classList.add('on');b.remove();play(v);});
+  });
+  /* step chips seek the clip in the same figure */
+  document.querySelectorAll('.clip-steps').forEach(function(ol){
+    var fig=ol.closest('figure'),fr=fig.querySelector('.clip-frame'),btns=ol.querySelectorAll('button');
+    var ts=[].map.call(btns,function(b){return parseFloat(b.dataset.seek);});
+    btns.forEach(function(b){b.addEventListener('click',function(){var v=video(fr);
+      var go=function(){v.currentTime=parseFloat(b.dataset.seek);play(v);};
+      if(v.readyState>0)go();else v.addEventListener('loadedmetadata',go,{once:true});});});
+    var tick=function(){if(!fr._v)return;var t=fr._v.currentTime,k=-1;ts.forEach(function(s,i){if(t>=s-0.05)k=i;});
+      btns.forEach(function(b,i){b.classList.toggle('cur',i===k);});};
+    setInterval(tick,300);
+  });
+  /* filter chips and view tabs */
+  document.querySelectorAll('.cgrid').forEach(function(g){
+    g.querySelectorAll('.chips button').forEach(function(b){b.addEventListener('click',function(){
+      g.querySelectorAll('.chips button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+      if(b.dataset.filter){var f=b.dataset.filter;g.querySelectorAll('.tile').forEach(function(t){t.hidden=!(f==='all'||t.dataset.cat===f);});}
+      if(b.dataset.view){g.querySelectorAll('[data-panel]').forEach(function(p){p.hidden=p.dataset.panel!==b.dataset.view;});}
+    });});
+  });
+  /* YouTube: load the player only on click */
+  document.querySelectorAll('.yt').forEach(function(y){
+    y.querySelector('button').addEventListener('click',function(){
+      var f=document.createElement('iframe');
+      f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.id+'?autoplay=1&rel=0';
+      f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.title='YouTube video';
+      y.innerHTML='';y.appendChild(f);
+    });
+  });
+})();
+</script>
