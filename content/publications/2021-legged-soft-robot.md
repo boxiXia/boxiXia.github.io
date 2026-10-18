@@ -5,6 +5,9 @@ authors: ["B. Xia", "J. Fu", "H. Zhu", "Z. Song", "Y. Jiang", "H. Lipson"]
 publication: "2021 IEEE International Conference on Robotics and Automation (ICRA)"
 pages: "11812–11819"
 year: 2021
+research: true
+home_tag: "Soft robots"
+home_piece: "Flexipod, an untethered soft quadruped that runs at 0.9 m/s and does backflips, with gaits tuned in a CUDA soft-body simulator."
 conference: true
 publication_short: "ICRA 2021"
 doi: 10.1109/ICRA48506.2021.9561018
@@ -13,7 +16,7 @@ thumbnail: /publications/2021-legged-soft-robot/flexipod_at_columbia.jpg
 code: https://github.com/boxiXia/FlexipodHardware
 presentation: "Poster"
 featured: true
-abstract: "We present Flexipod, an open-source untethered quadrupedal soft robot platform for dynamic locomotion. The robot is 80 vol.% soft with 3D-printed gyroid-infill flexible legs that passively stabilize on multi-terrain environments. With gaits tuned in a CUDA-accelerated soft-body simulator, the real robot achieves 0.9 m/s (2.5 body lengths/sec) — faster than most untethered legged soft robots — and can execute backflips."
+abstract: "We present Flexipod, an open-source untethered quadrupedal soft robot platform for dynamic locomotion. The robot is 80 vol.% soft with 3D-printed gyroid-infill flexible legs that passively stabilize on multi-terrain environments. With gaits tuned in a CUDA-accelerated soft-body simulator, the real robot achieves 0.9 m/s (2.5 body lengths/sec), faster than most untethered legged soft robots, and can execute backflips."
 ---
 
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin:1.5em 0">
@@ -39,7 +42,7 @@ The flexible material used for printing the soft body and legs is a flexible TPU
 
 <figure>
   <img src="/publications/2021-legged-soft-robot/material_flow_infill_hardness.jpg" alt="Shore hardness vs flow rate and infill density" style="width:100%;border-radius:4px">
-  <figcaption>(a) Shore hardness vs. flow rate and infill density; (b–c) 3D printed cross-sections of (b) gyroid 20% infill density and 90% flow rate, and (c) 16% infill density and 80% flow rate.</figcaption>
+  <figcaption>(a) Shore hardness vs. flow rate and infill density. (b, c) 3D printed cross-sections with gyroid infill: (b) 20% infill density and 90% flow rate, (c) 16% infill density and 80% flow rate.</figcaption>
 </figure>
 
 ## Body Design
@@ -48,7 +51,7 @@ The body is printed with flexible material. 96 vol.% of the 3D printed parts are
 
 <figure>
   <img src="/publications/2021-legged-soft-robot/body_open.jpg" alt="Soft robot structure" style="width:100%;border-radius:4px">
-  <figcaption>Structure of the soft robot: (1) Soft main body; (2) Camera; (3) Electronic components; (4) Li-Po battery; (5) Bearing; (6) DJI M3508 brushless DC motor enclosed in a motor shell; (7) Soft leg.</figcaption>
+  <figcaption>Structure of the soft robot: (1) soft main body, (2) camera, (3) electronics, (4) Li-Po battery, (5) bearing, (6) DJI M3508 brushless DC motor in a motor shell, (7) soft leg.</figcaption>
 </figure>
 
 ## Soft Leg
@@ -57,12 +60,12 @@ The leg's hollowed structure makes it flexible and impact resistant. To demonstr
 
 <figure>
   <img src="/publications/2021-legged-soft-robot/leg.jpg" alt="Flexipod soft leg design and drop test" style="width:60%;display:block;margin:0 auto;border-radius:4px">
-  <figcaption>Flexipod soft leg and demonstration: (a) Soft leg, leg coupler and bearing; (b) 3D model of the leg assembly showing its internal structure; (c) chronophotograph of the Flexipod dropped from 2.0 m.</figcaption>
+  <figcaption>(a) Soft leg, leg coupler, and bearing. (b) 3D model of the leg assembly showing its internal structure. (c) Chronophotograph of Flexipod dropped from 2.0 m.</figcaption>
 </figure>
 
 ## Simulation
 
-We developed a soft robot simulation environment based on [Titan](https://github.com/jacobaustin123/Titan) — a CUDA-accelerated massively parallel asynchronous spring-mass simulation library. We extended Titan with a rotational kernel for contact-coupling of soft bodies. The Flexipod simulation achieved 10⁹ spring evaluations per second on a consumer Nvidia 2080Ti GPU.
+We developed a soft robot simulation environment based on [Titan](https://github.com/jacobaustin123/Titan), a CUDA-accelerated massively parallel asynchronous spring-mass simulation library. We extended Titan with a rotational kernel for contact-coupling of soft bodies. The Flexipod simulation achieved 10⁹ spring evaluations per second on a consumer Nvidia 2080Ti GPU.
 
 {{< youtube 52yaNeKdhIc >}}
 
@@ -70,7 +73,7 @@ We developed a soft robot simulation environment based on [Titan](https://github
 
 <figure>
   <img src="/publications/2021-legged-soft-robot/gait.jpg" alt="Flexipod locomotion patterns" style="width:100%;border-radius:4px">
-  <figcaption>(a) Bounding gait; (b) pace gait; (c) turning; (d) backflip.</figcaption>
+  <figcaption>(a) Bounding gait, (b) pace gait, (c) turning, (d) backflip.</figcaption>
 </figure>
 
 ### Backflips

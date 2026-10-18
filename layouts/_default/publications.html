@@ -1,77 +1,32 @@
 {{- define "main" }}
-<style>
-.pub-list{display:flex;flex-direction:column;gap:.9rem;margin:1rem 0 2rem}
-.pub-card{display:flex;gap:1rem;padding:1rem 1.2rem;border:1px solid var(--border);border-radius:8px;background:var(--entry);position:relative;transition:border-color .15s}
-.pub-card:hover{border-color:var(--primary)}
-.pub-card.featured{border-left:3px solid var(--primary)}
-.pub-thumb{flex-shrink:0;width:120px;align-self:flex-start}
-.pub-thumb img{width:120px;height:auto;object-fit:contain;border-radius:4px}
-.pub-body{flex:1;min-width:0}
-.pub-badges{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.4rem}
-.pub-badge{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:1px 7px;border-radius:3px;white-space:nowrap}
-.badge-journal{background:#1565c0;color:#fff}
-.badge-conference{background:#2e7d32;color:#fff}
-.badge-cover{background:#6a1b9a;color:#fff}
-.badge-status{background:var(--secondary);color:var(--theme)}
-.pub-title{font-size:.95rem;font-weight:600;margin:.2rem 0 .35rem;line-height:1.4}
-.pub-title a{color:inherit;text-decoration:none}
-.pub-title a:hover{color:var(--primary);text-decoration:underline}
-.pub-authors{font-size:.8rem;color:var(--secondary);margin-bottom:.45rem}
-.pub-equal{font-size:.72rem;font-style:italic}
-.pub-abstract{margin:.4rem 0 .5rem;font-size:.8rem}
-.pub-abstract summary{cursor:pointer;color:var(--secondary);font-style:italic;user-select:none;list-style:none;display:flex;align-items:center;gap:.3rem}
-.pub-abstract summary::before{content:"▶";font-size:.6rem;transition:transform .15s;flex-shrink:0}
-.pub-abstract[open] summary::before{transform:rotate(90deg)}
-.pub-abstract summary::-webkit-details-marker{display:none}
-.pub-abstract p{margin:.5rem 0 0;color:var(--secondary);line-height:1.55;padding-left:.9rem}
-.pub-links{display:flex;gap:.4rem;flex-wrap:wrap}
-.pub-link{font-size:.72rem;padding:2px 9px;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:inherit}
-.pub-link:hover{background:var(--primary);color:var(--theme);border-color:var(--primary)}
-.pub-section-hdr{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--secondary);border-bottom:1px solid var(--border);padding-bottom:.35rem;margin:2rem 0 .75rem}
-.pub-year-hdr{font-size:.72rem;font-weight:700;color:var(--secondary);margin:1.25rem 0 .5rem .1rem;letter-spacing:.04em}
-@media(max-width:540px){.pub-thumb{display:none}}
-</style>
-
 <header class="page-header">
-  {{- partial "breadcrumbs.html" . }}
   <h1>{{ .Title }}</h1>
-  {{- with .Description }}<div class="post-description">{{ . | markdownify }}</div>{{- end }}
+  <p class="pub-note">* equal contribution. Also on <a href="https://scholar.google.com/citations?user=TjA61pwAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
 </header>
 
 {{- $pages := .Pages.ByDate.Reverse }}
-{{- $journals := where $pages "Params.journal" true }}
-{{- $conferences := where $pages "Params.conference" true }}
+{{- $sections := slice
+  (dict "title" "Journal Articles" "key" "Params.journal")
+  (dict "title" "Conference Papers" "key" "Params.conference")
+  (dict "title" "Workshop Papers" "key" "Params.workshop")
+  (dict "title" "Preprints (not yet peer-reviewed)" "key" "Params.preprint") }}
 
-{{- with $journals }}
-<div class="pub-section-hdr">Journal Articles</div>
-{{- $years := slice }}
-{{- range . }}{{- $y := string .Params.year }}{{- if not (in $years $y) }}{{- $years = $years | append $y }}{{- end }}{{- end }}
-{{- range $years }}
-  {{- $yr := . }}
-  {{- $group := where $journals "Params.year" (int $yr) }}
+{{- range $sections }}
+  {{- $title := .title }}
+  {{- $group := where $pages .key true }}
   {{- if $group }}
-  <div class="pub-year-hdr">{{ $yr }}</div>
-  <div class="pub-list">
-    {{- range $group }}{{ partial "pub-card.html" . }}{{ end }}
-  </div>
+  <section class="pub-section">
+    <div class="sec-hdr">{{ $title }}</div>
+    {{- $years := slice }}
+    {{- range $group }}{{ $y := string .Params.year }}{{ if not (in $years $y) }}{{ $years = $years | append $y }}{{ end }}{{ end }}
+    {{- range $years }}
+      {{- $yr := . }}
+      <div class="pub-year">{{ $yr }}</div>
+      <div class="pub-rows">
+        {{- range where $group "Params.year" (int $yr) }}{{ partial "pub-row.html" (dict "page" . "mode" "compact") }}{{ end }}
+      </div>
+    {{- end }}
+  </section>
   {{- end }}
 {{- end }}
-{{- end }}
-
-{{- with $conferences }}
-<div class="pub-section-hdr">Conference Papers</div>
-{{- $years := slice }}
-{{- range . }}{{- $y := string .Params.year }}{{- if not (in $years $y) }}{{- $years = $years | append $y }}{{- end }}{{- end }}
-{{- range $years }}
-  {{- $yr := . }}
-  {{- $group := where $conferences "Params.year" (int $yr) }}
-  {{- if $group }}
-  <div class="pub-year-hdr">{{ $yr }}</div>
-  <div class="pub-list">
-    {{- range $group }}{{ partial "pub-card.html" . }}{{ end }}
-  </div>
-  {{- end }}
-{{- end }}
-{{- end }}
-
 {{- end }}

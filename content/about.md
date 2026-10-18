@@ -2,140 +2,78 @@
 title: "About"
 layout: "about"
 url: "/about/"
-summary: "About me"
+summary: "About Boxi Xia"
+hideMeta: true
 ---
 
-<style>
-.about-section{margin:2rem 0}
-.about-section h2{font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--secondary);border-bottom:1px solid var(--border);padding-bottom:.4rem;margin-bottom:1.2rem}
 
-/* Timeline */
-.timeline{display:flex;flex-direction:column;gap:0;position:relative;padding-left:1.5rem}
-.timeline::before{content:"";position:absolute;left:.35rem;top:.4rem;bottom:.4rem;width:2px;background:var(--border)}
-.tl-item{position:relative;padding-bottom:1.25rem}
-.tl-item:last-child{padding-bottom:0}
-.tl-dot{position:absolute;left:-1.15rem;top:.35rem;width:10px;height:10px;border-radius:50%;background:var(--primary);border:2px solid var(--theme);flex-shrink:0}
-.tl-period{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--secondary);margin-bottom:.2rem}
-.tl-title{font-size:.95rem;font-weight:600;line-height:1.3;margin-bottom:.15rem}
-.tl-sub{font-size:.83rem;color:var(--secondary);line-height:1.4}
+I'm a postdoc in the General Robotics Lab at Duke, working with Boyuan Chen. Most of my projects involve building a new robot. I design it, write the simulation it trains in, and stay with it until the learned controller works on the hardware. At Duke that has meant Argus, a 20-legged robot that moves in any orientation, as well as two humanoids and the Cartesian Hand, which manipulates objects using only linear joints. I'm currently mentoring three students on the second humanoid and the hand.
 
-/* Expertise tags */
-.tag-list{display:flex;flex-wrap:wrap;gap:.4rem;margin:.5rem 0}
-.tag{font-size:.75rem;padding:3px 10px;border:1px solid var(--border);border-radius:12px;color:var(--secondary)}
+Before Duke I spent a year and a half at PX Robotics writing locomotion controllers for quadrupeds. Before that I did my Ph.D. at Columbia with Hod Lipson, building soft legged robots and the GPU simulator we used to tune their gaits.
 
-/* Press */
-.press-list{display:flex;flex-direction:column;gap:.5rem;margin:.75rem 0 1.5rem}
-.press-item{display:flex;align-items:baseline;gap:.75rem;padding:.5rem .75rem;border-left:3px solid var(--border)}
-.press-outlet{font-weight:700;min-width:160px;flex-shrink:0;font-size:.9rem}
-.press-detail{color:var(--secondary);font-size:.88rem;line-height:1.4}
-.press-detail a{color:inherit}
-</style>
-
-I'm Boxi Xia, a postdoctoral researcher at Duke University working with Prof. Boyuan Chen in the General Robotics Lab. My research spans the full pipeline from robot hardware design and fabrication through simulation, learning, and real-world deployment — with a focus on legged locomotion systems including humanoids and soft robots.
-
-<div class="about-section">
-<h2>Research</h2>
-
-I develop learning-based control algorithms using reinforcement learning and build physics-based simulators to enable efficient robot design and control. Recent projects include designing the Duke Humanoid (a 10-DOF child-sized bipedal robot for energy-efficient locomotion using passive dynamics) and Text2Robot (a framework that uses generative AI to automatically design and manufacture quadrupedal robots from text descriptions). My latest work, Argus, introduces *dynamic symmetry* as a design principle — showing that maximizing the uniformity of a robot's attainable center-of-mass accelerations leads to dramatically improved robustness, agility, and energy efficiency.
-</div>
-
-<div class="about-section">
-<h2>Areas of Expertise</h2>
-<div class="tag-list">
-  <span class="tag">Robot hardware design</span>
-  <span class="tag">Humanoid & legged locomotion</span>
-  <span class="tag">Reinforcement learning</span>
-  <span class="tag">Soft robotics & actuators</span>
-  <span class="tag">Physics simulation (CUDA, PBD)</span>
-  <span class="tag">3D printing & rapid prototyping</span>
-  <span class="tag">Deep learning</span>
-</div>
-</div>
+Longer term, I want robots that can carry out long, precise physical tasks reliably. Each project so far covers one part of that.
 
 <div class="about-section">
 <h2>Experience</h2>
 <div class="timeline">
-  <div class="tl-item">
-    <div class="tl-dot"></div>
-    <div class="tl-period">2023 – present</div>
-    <div class="tl-title">Postdoctoral Researcher — Duke University</div>
-    <div class="tl-sub">General Robotics Lab, advised by Prof. Boyuan Chen. Legged robot design, whole-body control, morphology-varying reinforcement learning.</div>
+  <div class="tl-item"><div class="tl-dot"></div>
+    <div class="tl-period">09/2023 to present</div>
+    <div class="tl-title">Postdoctoral Associate <span class="tl-org">· Duke University</span></div>
+    <div class="tl-sub"><a href="https://generalroboticslab.com/" target="_blank" rel="noopener">General Robotics Lab</a>, with <a href="https://boyuan.space/" target="_blank" rel="noopener">Prof. Boyuan Chen</a>.</div>
   </div>
-  <div class="tl-item">
-    <div class="tl-dot"></div>
-    <div class="tl-period">2022 – 2023</div>
-    <div class="tl-title">Senior Machine Learning Engineer — XPENG Robotics</div>
-    <div class="tl-sub">Santa Clara, CA. Vision-free end-to-end controllers and model-based locomotion controllers for quadrupedal robots.</div>
+  <div class="tl-item"><div class="tl-dot"></div>
+    <div class="tl-period">02/2022 to 08/2023</div>
+    <div class="tl-title">Senior Machine Learning Engineer <span class="tl-org">· PX Robotics Inc., Santa Clara, CA</span></div>
+    <div class="tl-sub">Learned locomotion controllers deployed on the Unitree A1 and the company's Px2 quadruped, including a hierarchical controller pairing an RL policy with a model-based low-level controller.</div>
   </div>
-  <div class="tl-item">
-    <div class="tl-dot"></div>
-    <div class="tl-period">2017 – 2021</div>
-    <div class="tl-title">Ph.D. Researcher — Columbia University</div>
-    <div class="tl-sub">Creative Machines Lab, advised by Prof. Hod Lipson. Soft robotics, evolutionary computation, and machine learning for robot design.</div>
+  <div class="tl-item"><div class="tl-dot"></div>
+    <div class="tl-period">12/2018 to 12/2020</div>
+    <div class="tl-title">Ph.D. Research <span class="tl-org">· Columbia University</span></div>
+    <div class="tl-sub"><a href="https://www.creativemachineslab.com/" target="_blank" rel="noopener">Creative Machines Lab</a>, with <a href="https://www.hodlipson.com/" target="_blank" rel="noopener">Prof. Hod Lipson</a>. Soft legged robots, including the Flexipod quadruped and a CUDA soft-body simulator.</div>
+  </div>
+  <div class="tl-item"><div class="tl-dot"></div>
+    <div class="tl-period">02/2017 to 03/2018</div>
+    <div class="tl-title">M.S. Thesis Research <span class="tl-org">· Columbia University</span></div>
+    <div class="tl-sub">ROAR Lab, with <a href="https://www.me.columbia.edu/faculty/sunil-agrawal" target="_blank" rel="noopener">Prof. Sunil Agrawal</a>. Virtual reality tools for gait and navigation studies.</div>
   </div>
 </div>
 </div>
 
 <div class="about-section">
 <h2>Education</h2>
-<div class="timeline">
-  <div class="tl-item">
-    <div class="tl-dot"></div>
-    <div class="tl-period">2021</div>
-    <div class="tl-title">Ph.D. in Mechanical Engineering — Columbia University</div>
-    <div class="tl-sub">Advisor: Prof. Hod Lipson &nbsp;·&nbsp; Focus: Soft robotics, evolutionary computation, machine learning for robot design</div>
-  </div>
-  <div class="tl-item">
-    <div class="tl-dot"></div>
-    <div class="tl-period">2017</div>
-    <div class="tl-title">M.S. in Mechanical Engineering (Robotics) — Columbia University</div>
-    <div class="tl-sub">Focus: Robotics, control systems, and artificial intelligence</div>
-  </div>
-  <div class="tl-item">
-    <div class="tl-dot"></div>
-    <div class="tl-period">2016</div>
-    <div class="tl-title">B.Eng. in Machine Design, Manufacturing & Automation — HUST</div>
-    <div class="tl-sub">Huazhong University of Science and Technology, Wuhan, China</div>
-  </div>
-</div>
+
+- Ph.D., Mechanical Engineering, Columbia University, 2022
+- M.S., Mechanical Engineering (Robotics), Columbia University, 2018
+- B.Eng., Machine Design, Manufacturing &amp; Automation, Huazhong University of Science and Technology, 2016
+- Visiting Scholar Program, UC San Diego, 2014 to 2015
 </div>
 
 <div class="about-section">
-<h2>Press & Media Coverage</h2>
-<div class="press-list">
-  <div class="press-item">
-    <span class="press-outlet">Fox News</span>
-    <span class="press-detail">Text2Robot: AI automatically designs and 3D-prints walking robots from text descriptions — 2025</span>
-  </div>
-  <div class="press-item">
-    <span class="press-outlet">IEEE Spectrum</span>
-    <span class="press-detail">Coverage of Flexipod soft legged robot achieving high-speed locomotion and backflips — 2019</span>
-  </div>
-  <div class="press-item">
-    <span class="press-outlet">Duke University</span>
-    <span class="press-detail">Research Spotlight Talk, Responsible AI Symposium — 2025</span>
-  </div>
-  <div class="press-item">
-    <span class="press-outlet">3D Printing & Additive Mfg.</span>
-    <span class="press-detail"><a href="https://doi.org/10.1089/3dp.2019.0116">Cover article: Additive manufacturing of silicone composites for soft actuation</a> — 2019</span>
-  </div>
-  <div class="press-item">
-    <span class="press-outlet">Actuators (MDPI)</span>
-    <span class="press-detail"><a href="https://doi.org/10.3390/act9030062">Cover article: Improving actuation speed of silicone/ethanol soft actuators</a> — 2020</span>
-  </div>
-</div>
+<h2>Recognition &amp; Service</h2>
+
+- Best Paper Award, Space Robotics Workshop at IEEE/RSJ IROS 2026 ([paper](/publications/2026-space-workshop/))
+- Innovation Award, ALIFE 2024 Virtual Creatures Competition, for Text2Robot
+- Nominee, 2026 Outstanding Postdoc Award, Duke University (24 nominees among 650 postdocs)
+- Patent application, *Spherical Robot for All-Direction Movement and Active Sensing* (U.S. Provisional 63/806,244 and PCT/US2026/028284), covering Argus
+- Patent application, *Artificial Intelligence-Based Systems and Methods for Robot Tooling for Laboratory Automation* (U.S. Provisional 64/069,387)
+- Session Chair and Session Co-Chair, IEEE/RSJ IROS 2026
+- Reviewer for IROS, ICRA, CoRL, IEEE-RAS Humanoids, IEEE RA-L, and Springer Nature journals
+- Cover articles in *3D Printing and Additive Manufacturing* (2019) and *Actuators* (2020)
+- Member of Sigma Xi
 </div>
 
 <div class="about-section">
-<h2>Recognition & Honors</h2>
+<h2>Press &amp; Talks</h2>
 
-- Member of Sigma Xi, The Scientific Research Honor Society
-- Inventor on provisional patent DU8960PROV (Argusbot), Duke University (2024)
-- Active reviewer: IROS, ICRA, CoRL, IEEE RA-L, Springer Nature Journals
+- Argus (*Science Robotics*, 2026): 99 news outlets, top 5% of research outputs tracked by [Altmetric](https://robotics.altmetric.com/details/196885470). Coverage includes [AP News](https://apnews.com/article/robot-duke-argus-6ba9651ba6553ebc4405ffc07a26afed), [The Washington Post](https://www.washingtonpost.com/business/2026/05/27/robot-duke-argus/7fa95608-59f9-11f1-8a9d-afb1148204e1_story.html), [Fortune](https://fortune.com/2026/05/28/duke-argus-robot-20-legs-nightmare-omnidirectional/), [IEEE Spectrum](https://spectrum.ieee.org/video-friday-rabona-soccer), [Popular Science](https://www.popsci.com/technology/unstoppable-blob-robot/), and [Hackaday](https://hackaday.com/2026/06/01/classically-named-argus-robot-is-terminator-meets-tumbleweed/)
+- [RealSense interview](https://youtu.be/LFETWcjtMyM) on Duke Humanoid v2, 2026
+- Research spotlight talk, Duke [Responsible AI Symposium](https://www.responsibleaisymposium.com/2025), 2025
+- [FOX8 WGHP](https://www.youtube.com/watch?v=PX1nZmKsWPM) on Text2Robot, 2025
+- [IEEE Spectrum robotics channel](https://www.youtube.com/watch?v=b2eTICDM_Is) on Flexipod, 2023
 </div>
 
 <div class="about-section">
 <h2>Contact</h2>
 
-[Email](mailto:boxi.xia@columbia.edu) &nbsp;·&nbsp; [Google Scholar](https://scholar.google.com/citations?user=TjA61pwAAAAJ&hl=en) &nbsp;·&nbsp; [GitHub](https://github.com/boxiXia)
+[boxi.xia@duke.edu](mailto:boxi.xia@duke.edu) &nbsp;·&nbsp; [Google Scholar](https://scholar.google.com/citations?user=TjA61pwAAAAJ&hl=en) &nbsp;·&nbsp; [GitHub](https://github.com/boxiXia) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/boxixia/)
 </div>

@@ -1,5 +1,5 @@
 ---
-title: "Development of a virtual floor maze test – effects of distal visual cues and correlations with executive function in healthy adults"
+title: "Development of a virtual floor maze test: effects of distal visual cues and correlations with executive function in healthy adults"
 date: 2019-10-01
 authors: ["D. Martelli", "A. Prado", "B. Xia", "J. Verghese", "S.K. Agrawal"]
 publication: "IEEE Transactions on Neural Systems and Rehabilitation Engineering"
@@ -11,7 +11,7 @@ journal: true
 doi: 10.1109/TNSRE.2019.2938103
 pdf: /publications/2019-virtual-floor-maze/2019-virtual-floor-maze.pdf
 thumbnail: /publications/2019-virtual-floor-maze/vr_maze_fig_1.jpg
-abstract: "We developed a virtual reality version of the floor maze test (VR-FMT) to assess spatial navigation in 55 healthy adults across real and virtual environments, with and without maze walls. Results show the VR-FMT provides an ecologically valid assessment of spatial navigation that correlates with executive function measures, offering potential for early detection of cognitive and navigational deficits."
+abstract: "We developed a virtual reality version of the floor maze test (VR-FMT) to assess spatial navigation in 55 healthy adults across real and virtual environments, with and without maze walls. The VR-FMT gives an ecologically valid assessment of spatial navigation that correlates with executive function, and it may help with early detection of cognitive and navigational deficits."
 ---
 
 ## Abstract

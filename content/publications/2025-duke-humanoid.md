@@ -6,14 +6,17 @@ publication: "IEEE/RSJ International Conference on Intelligent Robots and System
 year: 2025
 conference: true
 featured: true
+research: true
+home_tag: "Sim-to-real"
+home_piece: "An open-source 10-DoF biped. Its RL policy, trained in simulation, runs zero-shot on the hardware and uses passive dynamics to cut the cost of transport by up to 31%."
 publication_short: "IROS 2025"
-thumbnail: /publications/2025-duke-humanoid/graphical%20abstract.png
+thumbnail: /publications/2025-duke-humanoid/thumb.gif
 doi: 10.48550/arXiv.2409.19795
 arxiv: https://arxiv.org/abs/2409.19795
 pdf: /publications/2025-duke-humanoid/2025-duke-humanoid.pdf
 code: https://github.com/generalroboticslab/DukeHumanoidv1
 presentation: "Poster"
-abstract: "We present the Duke Humanoid, an open-source 10-DOF child-sized bipedal robot designed for energy-efficient locomotion using passive dynamics. We develop a reinforcement learning policy deployable zero-shot on hardware for velocity-tracking walking, and propose an end-to-end RL algorithm that encourages passive dynamics — reducing cost of transport by up to 50% in simulation and 31% in real-world tests."
+abstract: "We present the Duke Humanoid, an open-source 10-DOF child-sized bipedal robot designed for energy-efficient locomotion using passive dynamics. We develop a reinforcement learning policy deployable zero-shot on hardware for velocity-tracking walking, and propose an end-to-end RL algorithm that encourages passive dynamics, reducing cost of transport by up to 50% in simulation and 31% in real-world tests."
 ---
 
 ## Abstract
@@ -48,7 +51,6 @@ We present the Duke Humanoid, an open-source 10-degrees-of-freedom humanoid, as 
   title={The Duke Humanoid: Design and control for energy-efficient bipedal locomotion using passive dynamics},
   author={Xia, B. and Li, B. and Lee, J. and Scutari, M. and Chen, B.},
   booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)},
-  year={2025},
-  note={Accepted}
+  year={2025}
 }
 ```

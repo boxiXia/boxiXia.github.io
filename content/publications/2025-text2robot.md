@@ -7,15 +7,19 @@ pages: "5789–5797"
 year: 2025
 conference: true
 featured: true
+research: true
+home_tag: "Fast design iteration"
+home_piece: "Turns a text prompt into a walking quadruped. My training pipeline learns a gait for each generated body in minutes."
+award: "ALIFE 2024 Innovation Award"
 publication_short: "ICRA 2025"
 doi: 10.1109/ICRA55743.2025.11128168
 arxiv: https://arxiv.org/abs/2406.19963
 pdf: /publications/2025-text2robot/2025-text2robot.pdf
 website: https://generalroboticslab.com/Text2Robot
 code: https://github.com/generalroboticslab/Text2Robot
-thumbnail: /publications/2025-text2robot/text2robot_Fig_Teaser.png
+thumbnail: /publications/2025-text2robot/thumb.gif
 presentation: "Poster"
-abstract: "Text2Robot converts user text descriptions into physical quadrupedal robots. Within minutes, text-to-3D models initialize diverse morphologies; within a day, geometric processing and body-control co-optimization produce a walking robot that accounts for real-world electronics and manufacturability. The framework enables rapid prototyping and opens new opportunities for generative robot design."
+abstract: "Text2Robot converts user text descriptions into physical quadrupedal robots. Text-to-3D models give diverse starting body shapes within minutes. Within a day, geometric processing and co-optimization of body and control produce a walking robot that accounts for real electronics and manufacturability."
 ---
 
 ## Abstract
@@ -35,7 +39,7 @@ Robot design has traditionally been costly and labor-intensive. Despite advancem
 
 <figure>
   <img src="/publications/2025-text2robot/text2robot_EvolutionaryLoop.PNG" alt="Evolutionary loop diagram" style="width:100%;border-radius:4px">
-  <figcaption><strong>Morphology and Walking Policy Co-optimization.</strong> (A) The inner loop implements reinforcement learning to optimize the robot control policy; the outer loop optimizes robot morphologies through genetic operations. (B) Genetic representation and examples of crossover and mutation.</figcaption>
+  <figcaption><strong>Morphology and Walking Policy Co-optimization.</strong> (A) The inner loop implements reinforcement learning to optimize the robot control policy, and the outer loop optimizes robot morphologies through genetic operations. (B) Genetic representation and examples of crossover and mutation.</figcaption>
 </figure>
 
 ## Generated Robot Designs

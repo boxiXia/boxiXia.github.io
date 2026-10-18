@@ -11,7 +11,7 @@ journal: true
 doi: 10.3390/act8010009
 pdf: /publications/2019-conductive-fabric-heaters/2019-conductive-fabric-heaters.pdf
 thumbnail: /publications/2019-conductive-fabric-heaters/fig1.jpg
-abstract: "We examine electrically conductive fabrics as Joule heaters for silicone/ethanol heat-activated soft actuators. A stretchable kirigami-based Thermionyx fabric design withstands up to 195 °C and 30 W, enabling cyclic heating to 80 °C and linear actuation strain exceeding 30% — superior to traditional Ni-Cr wire coils and suitable for diverse thermally-driven robotic applications."
+abstract: "We examine electrically conductive fabrics as Joule heaters for silicone/ethanol heat-activated soft actuators. A stretchable kirigami-based Thermionyx fabric design withstands up to 195 °C and 30 W, enabling cyclic heating to 80 °C and linear actuation strain exceeding 30%. It outperforms traditional Ni-Cr wire coils, and the approach may carry over to other thermally actuated systems."
 ---
 
 ## Highlights
@@ -29,7 +29,7 @@ We examine electrically conductive fabrics as conductive heaters for heat-activa
 
 **Figure 1. Fabric Heater in Silicone-Ethanol Thermal Actuator**
 
-Optical and thermal images comparing the actuator before and after actuation (left: before/after; right: thermal imaging of heating and fully actuated states).
+Optical and thermal images of the actuator before and after actuation. Left, the actuator before and after. Right, thermal images while heating and when fully actuated.
 
 ![Figure 1: Fabric heater in silicone-ethanol thermal actuator](/publications/2019-conductive-fabric-heaters/fig1.jpg)
 
@@ -41,7 +41,7 @@ Thermionyx nonwoven fabric with kirigami cut pattern (KL-6), showing the stagger
 
 **Figure 8. Thermal Images of Thermionyx Fabrics During Heating**
 
-Thermal imaging of the blank (KB-6) Thermionyx fabric design during Joule heating, showing temperature distribution. Dashed lines indicate the silicone material boundary; alligator clips appear cooler at top and bottom.
+Thermal imaging of the blank (KB-6) Thermionyx fabric design during Joule heating, showing temperature distribution. Dashed lines mark the silicone boundary. The alligator clips at top and bottom appear cooler.
 
 ![Figure 8: Thermal imaging of fabric heater](/publications/2019-conductive-fabric-heaters/fig8.png)
 

@@ -11,7 +11,7 @@ pagination:
 # Site parameters
 params:
   env: production
-  description: Robotics researcher specializing in legged locomotion, humanoid robots, reinforcement learning, and soft robotics
+  description: Boxi Xia, roboticist at Duke University. Embodied intelligence, robot design, humanoid and legged robots, and sim-to-real reinforcement learning.
   author: Boxi Xia
 
   # Theme settings
@@ -23,15 +23,21 @@ params:
   ShowWordCount: false
   ShowShareButtons: false
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: false
-  ShowToc: true
+  ShowToc: false
   TocOpen: false
 
   # SEO and Meta
   keywords:
     - robotics
+    - embodied intelligence
+    - field robotics
+    - humanoid manipulation
+    - dexterous manipulation
+    - robot hands
+    - space robotics
     - humanoid robots
     - legged locomotion
     - soft robotics
@@ -57,36 +63,15 @@ params:
   profileMode:
     enabled: true
     title: Boxi Xia
-    subtitle: Postdoctoral Researcher | Duke University | Legged Robotics & Machine Learning
+    subtitle: Postdoctoral Associate, Duke University · Embodied intelligence and robot design
     # Add your profile image: create static/images/profile.jpg and uncomment below
     # imageUrl: /images/profile.jpg
     imageTitle: Profile
     imageWidth: 120
     imageHeight: 120
-    buttons:
-      # - name: Posts
-      #   url: /posts
-      - name: Publications
-        url: /publications
-      - name: About
-        url: /about
-      # - name: Tags
-      #   url: /tags
-      # - name: Archive
-      #   url: /archives
 
-  # Social icons
-  socialIcons:
-    - name: github
-      url: https://github.com/boxiXia
-    - name: googlescholar
-      url: https://scholar.google.com/citations?user=TjA61pwAAAAJ&hl=en
-    - name: email
-      url: mailto:boxi.xia@columbia.edu
 
   # Uncomment and add more social links as needed
-  # - name: linkedin
-  #   url: https://linkedin.com/in/yourprofile
   # - name: twitter
   #   url: https://twitter.com/yourhandle
   # - name: stackoverflow

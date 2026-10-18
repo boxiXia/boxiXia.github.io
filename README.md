@@ -39,12 +39,16 @@ hugo server -D
 .
 ├── .github/workflows/  # GitHub Actions deployment workflow
 ├── content/           # Markdown content files
+│   ├── publications/ # One page per paper
 │   ├── posts/        # Blog posts
+│   ├── gallery.md    # Photo gallery
 │   ├── about.md      # About page
 │   ├── archives.md   # Archive page
 │   └── search.md     # Search page
 ├── themes/PaperMod/  # PaperMod theme (git submodule)
-├── hugo.toml         # Hugo configuration
+├── layouts/          # Custom layouts (publications, homepage profile)
+├── static/publications/  # Paper PDFs and figures
+├── hugo.yaml         # Hugo configuration
 └── README.md         # This file
 ```
 
@@ -68,7 +72,7 @@ The site automatically deploys to GitHub Pages when changes are pushed to the `m
 
 ## Configuration
 
-Main configuration is in `hugo.toml`. Key sections:
+Main configuration is in `hugo.yaml`. Key sections:
 - Site metadata and URLs
 - PaperMod theme settings
 - Social media links

@@ -1,0 +1,42 @@
+{{- /* One publication row. Call with (dict "page" . "mode" "home"|"compact"). */ -}}
+{{- $p := .page -}}
+{{- $mode := .mode | default "home" -}}
+{{- $self := "B. Xia" -}}
+{{- $venue := "" -}}
+{{- if $p.Params.preprint }}{{ $venue = "arXiv preprint" }}
+{{- else if or $p.Params.conference $p.Params.workshop }}{{ $venue = or $p.Params.publication_short $p.Params.publication }}
+{{- else }}{{ $venue = $p.Params.publication }}{{ end -}}
+{{- $yr := string $p.Params.year -}}
+<div class="pub-row{{ if eq $mode "compact" }} compact{{ end }}{{ if not $p.Params.thumbnail }} nomedia{{ end }}">
+  {{- with $p.Params.thumbnail }}
+  <a class="pr-media" href="{{ $p.RelPermalink }}" aria-hidden="true" tabindex="-1"><img src="{{ . }}" alt="" loading="lazy"></a>
+  {{- end }}
+  <div class="pr-body">
+    <a class="pr-title" href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+    {{- with $p.Params.authors }}
+    <div class="pr-authors">
+      {{- range $i, $a := . }}{{ if $i }}, {{ end }}{{ $name := strings.TrimSuffix "*" $a }}{{ if eq $name $self }}<strong>{{ $name }}</strong>{{ else }}{{ $name }}{{ end }}{{ if strings.HasSuffix $a "*" }}<sup>*</sup>{{ end }}{{ end -}}
+    </div>
+    {{- end }}
+    <div class="pr-venue{{ if $p.Params.venue_bold }} strong{{ end }}"><em>{{ $venue }}</em>{{ if not (in $venue $yr) }}, {{ $yr }}{{ end }}{{ if $p.Params.preprint }}<span class="pr-pre">Not yet peer-reviewed</span>{{ end }}</div>
+    {{- if or $p.Params.award $p.Params.cover_article }}
+    <div class="pr-award">{{ with $p.Params.award }}{{ . }}{{ end }}{{ if and $p.Params.award $p.Params.cover_article }} · {{ end }}{{ if $p.Params.cover_article }}Cover Article{{ end }}</div>
+    {{- end }}
+    {{- $links := slice }}
+    {{- with $p.Params.website }}{{ $links = $links | append (printf `<a href="%s" target="_blank" rel="noopener">%s</a>` . (lower ($p.Params.website_label | default "project page"))) }}{{ end }}
+    {{- with $p.Params.pdf }}{{ $links = $links | append (printf `<a href="%s">paper</a>` .) }}{{ end }}
+    {{- with $p.Params.arxiv }}{{ $links = $links | append (printf `<a href="%s" target="_blank" rel="noopener">arXiv</a>` .) }}{{ end }}
+    {{- with $p.Params.doi }}{{ $links = $links | append (printf `<a href="https://doi.org/%s" target="_blank" rel="noopener">DOI</a>` .) }}{{ end }}
+    {{- with $p.Params.code }}{{ $links = $links | append (printf `<a href="%s" target="_blank" rel="noopener">code</a>` .) }}{{ end }}
+    {{- with $links }}
+    <div class="pr-links">{{ delimit . `<span class="sep">/</span>` | safeHTML }}</div>
+    {{- end }}
+    {{- if eq $mode "home" }}
+      {{- with $p.Params.home_piece }}<div class="pr-piece">{{ with $p.Params.home_tag }}<span class="pr-tag">{{ . }}</span>{{ end }}{{ . }}</div>{{ end }}
+      {{- with $p.Params.role }}<div class="pr-role">My role: {{ . }}</div>{{ end }}
+    {{- else }}
+      {{- with $p.Params.role }}<div class="pr-role">My role: {{ . }}</div>{{ end }}
+      {{- with $p.Params.abstract }}<details class="pr-abs"><summary>Abstract</summary><p>{{ . }}</p></details>{{ end }}
+    {{- end }}
+  </div>
+</div>

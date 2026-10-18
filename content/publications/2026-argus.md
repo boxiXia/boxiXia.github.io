@@ -1,6 +1,6 @@
 ---
 title: "Extreme dynamic symmetry enables omnidirectional and multifunctional robots"
-date: 2026-01-01
+date: 2026-05-27
 authors: ["J. Liu*", "B. Xia*", "B. Chen"]
 publication: "Science Robotics"
 volume: 11
@@ -8,11 +8,17 @@ number: 114
 pages: "eaec1725"
 year: 2026
 journal: true
+venue_bold: true
 featured: true
-thumbnail: /publications/2026-argus/argus_real_robot_blcak.jpg
+research: true
+home_tag: "Robustness"
+home_piece: "A 20-legged spherical robot built on dynamic symmetry, a design principle we introduced. It moves in any orientation, keeps going with up to three legs disabled, and climbs between walls under emulated lunar gravity."
+thumbnail: /publications/2026-argus/thumb.gif
 doi: 10.1126/scirobotics.aec1725
 website: https://generalroboticslab.com/Argus
-abstract: "We introduce dynamic symmetry — the uniformity of a robot's attainable center-of-mass accelerations — and show that maximizing it consistently improves trajectory tracking, robustness, and energy efficiency across 1,000+ simulated morphologies. We build Argus, a 20-leg spherical robot achieving near-extreme dynamic isotropy, demonstrating orientation-invariant locomotion, agile terrain traversal, and resilience to partial actuator failures."
+pdf: /publications/2026-argus/2026-argus.pdf
+arxiv: https://arxiv.org/abs/2605.29254
+abstract: "We introduce dynamic symmetry, the uniformity of a robot's attainable center-of-mass accelerations, and show that maximizing it consistently improves trajectory tracking, robustness, and energy efficiency across 1,000+ simulated morphologies. The 20-leg spherical robot we built, Argus, has near-extreme dynamic isotropy. It moves in any orientation, crosses cluttered and deformable terrain, and keeps working when some actuators fail."
 ---
 
 ## Abstract
@@ -23,7 +29,7 @@ Symmetry is a central organizing principle in natural systems, yet its use as a 
 
 ## Overview
 
-<img src="/publications/2026-argus/argus_video_wall.gif" alt="Argus demo wall — locomotion, terrain, manipulation" style="width:100%;height:auto;display:block;margin:1em 0;border-radius:4px">
+<img src="/publications/2026-argus/argus_video_wall.gif" alt="Argus demo wall: locomotion, terrain, manipulation" style="width:100%;height:auto;display:block;margin:1em 0;border-radius:4px">
 
 ## Simulation Demos
 
@@ -45,8 +51,8 @@ Symmetry is a central organizing principle in natural systems, yet its use as a 
 ## Photos
 
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;margin:1em 0">
-  <img src="/publications/2026-argus/argus_real_robot_blcak.jpg" alt="Argus robot — studio" style="width:100%;height:auto;display:block;border-radius:4px">
-  <img src="/publications/2026-argus/argus_real_robot_DSC00045.jpg" alt="Argus robot — studio closeup" style="width:100%;height:auto;display:block;border-radius:4px">
+  <img src="/publications/2026-argus/argus_real_robot_blcak.jpg" alt="Argus robot in the studio" style="width:100%;height:auto;display:block;border-radius:4px">
+  <img src="/publications/2026-argus/argus_real_robot_DSC00045.jpg" alt="Argus robot, studio close-up" style="width:100%;height:auto;display:block;border-radius:4px">
   <img src="/publications/2026-argus/argus_DSC00024.jpg" alt="Argus robot on beach" style="width:100%;height:auto;display:block;border-radius:4px">
   <img src="/publications/2026-argus/argus_C0328_00062.jpg" alt="Argus robot on beach at sunset" style="width:100%;height:auto;display:block;border-radius:4px">
   <img src="/publications/2026-argus/argus_DSC00253.jpg" alt="Argus robot on sand" style="width:100%;height:auto;display:block;border-radius:4px">
@@ -56,11 +62,16 @@ Symmetry is a central organizing principle in natural systems, yet its use as a 
   <img src="/publications/2026-argus/argus_DSC00240.jpg" alt="Argus robot on leaf-covered ground" style="width:100%;height:auto;display:block;border-radius:4px">
 </div>
 
+## Paper
+
+<object data="/publications/2026-argus/2026-argus.pdf" type="application/pdf" width="100%" height="800px" style="border:none;"><p>PDF cannot be displayed. <a href="/publications/2026-argus/2026-argus.pdf">Download PDF</a></p></object>
+
 ## Links
 
 - [Project Website](https://generalroboticslab.com/Argus)
 - [Full text (Science Robotics)](https://doi.org/10.1126/scirobotics.aec1725)
-- [PDF](https://generalroboticslab.com/assets/files/papers/argus.pdf)
+- [Download PDF (arXiv preprint)](/publications/2026-argus/2026-argus.pdf)
+- [Open access (arXiv)](https://arxiv.org/abs/2605.29254)
 
 ## Citation
 

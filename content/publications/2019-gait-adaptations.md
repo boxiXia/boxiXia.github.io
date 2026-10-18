@@ -10,7 +10,7 @@ journal: true
 doi: 10.1016/j.gaitpost.2018.10.029
 pdf: /publications/2019-gait-adaptations/2019-gait-adaptations.pdf
 thumbnail: /publications/2019-gait-adaptations/fig1.jpg
-abstract: "Twelve healthy adults walked overground in a virtual environment with continuous multidirectional visual-field perturbations via a VR headset. Participants took shorter strides with higher variability; medio-lateral perturbations caused greater effects than antero-posterior ones. Over time, participants adapted by increasing stride length and reducing variability — providing first evidence of visuomotor adaptation during overground walking with a VR headset."
+abstract: "Twelve healthy adults walked overground in a virtual environment with continuous multidirectional visual-field perturbations via a VR headset. Participants took shorter strides with higher variability, and medio-lateral perturbations had larger effects than antero-posterior ones. Over time, participants adapted by increasing stride length and reducing variability. This is the first evidence of visuomotor adaptation during overground walking with a VR headset."
 ---
 
 ## Highlights
@@ -34,13 +34,13 @@ Schematic of the system (top). Picture of a subject walking with the headset (bo
 
 **Figure 2. Results: Mean Gait Parameters**
 
-Panel A: Stride length (SL). Panel B: Stride Width (SW). Panel C: Stride Time (ST). Left graphs show effect of condition; right graphs show effect of time.
+Panel A: Stride length (SL). Panel B: Stride Width (SW). Panel C: Stride Time (ST). Left graphs show the effect of condition, right graphs the effect of time.
 
 ![Figure 2: Mean Gait Parameters](/publications/2019-gait-adaptations/fig2.jpg)
 
 **Figure 3. Results: Gait Variability**
 
-Panel A: Stride length variability (SLV). Panel B: Stride Width Variability (SWV). Panel C: Stride Time Variability (STV). Left graphs show effect of condition; right graphs show effect of time.
+Panel A: Stride length variability (SLV). Panel B: Stride Width Variability (SWV). Panel C: Stride Time Variability (STV). Left graphs show the effect of condition, right graphs the effect of time.
 
 ![Figure 3: Gait Variability](/publications/2019-gait-adaptations/fig3.jpg)
 
