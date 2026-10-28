@@ -29,12 +29,12 @@ Planetary ground robots can overturn while traversing crater slopes, uneven terr
 Argus with 12, 20, and 32 DoF (left to right) following a figure-eight trajectory on simulated Mars (top row) and Moon (bottom row) terrain under each body's gravity. These videos correspond to Fig. 1f and 1g in the paper.
 
 <figure>
-  <video src="/publications/2026-space-workshop/grid_wide.mp4" autoplay muted loop playsinline controls preload="auto" style="width:100%;border-radius:4px"></video>
+  <video src="/publications/2026-space-workshop/grid_wide.mp4" autoplay muted loop playsinline controls preload="metadata" style="width:100%;border-radius:4px"></video>
   <figcaption>Fixed top-down view. Pink is the commanded path and cyan is the robot's actual trajectory (Fig. 1f).</figcaption>
 </figure>
 
 <figure>
-  <video src="/publications/2026-space-workshop/grid_chase.mp4" autoplay muted loop playsinline controls preload="auto" style="width:100%;border-radius:4px"></video>
+  <video src="/publications/2026-space-workshop/grid_chase.mp4" autoplay muted loop playsinline controls preload="metadata" style="width:100%;border-radius:4px"></video>
   <figcaption>Camera following each robot (Fig. 1g).</figcaption>
 </figure>
 

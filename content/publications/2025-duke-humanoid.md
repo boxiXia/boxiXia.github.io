@@ -25,7 +25,7 @@ We present the Duke Humanoid, an open-source 10-degrees-of-freedom humanoid, as 
 
 ## Graphical Abstract
 
-![Graphical Abstract](/publications/2025-duke-humanoid/graphical%20abstract.png)
+![Graphical Abstract](/publications/2025-duke-humanoid/graphical_abstract.webp)
 
 ## Video
 

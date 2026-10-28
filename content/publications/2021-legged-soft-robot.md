@@ -47,11 +47,16 @@ The flexible material used for printing the soft body and legs is a flexible TPU
 
 ## Body Design
 
-The body is printed with flexible material. 96 vol.% of the 3D printed parts are soft, making the robot 80 vol.% soft overall.
+The body is printed with flexible material. 96 vol.% of the 3D printed parts are soft, making the robot 80 vol.% soft overall. Soft components are printed with gyroid infill in flexible TPU (20% infill density and 90% flow rate for the body and motor mounts; 16% infill density and 80% flow rate for the legs), with outer skins printed only at mating surfaces to preserve compliance, while the leg adapters and motor shells are printed in rigid polycarbonate (PolyMax PC).
 
 <figure>
   <img src="/publications/2021-legged-soft-robot/body_open.jpg" alt="Soft robot structure" style="width:100%;border-radius:4px">
   <figcaption>Structure of the soft robot: (1) soft main body, (2) camera, (3) electronics, (4) Li-Po battery, (5) bearing, (6) DJI M3508 brushless DC motor in a motor shell, (7) soft leg.</figcaption>
+</figure>
+
+<figure>
+  <img src="/publications/2021-legged-soft-robot/printed_parts.jpg" alt="3D printed and mechanical components of Flexipod" style="width:100%;border-radius:4px">
+  <figcaption>Mechanical components and 3D printed parts: (1) soft leg, (2) leg adapter, (3) outer motor mount, (4) sealed ball bearing (6806-2RS), (5) inner motor mount, (6) DJI M3508 brushless DC motor in a rigid motor shell, (7) top body cover, (8) upper body, (9) lower body.</figcaption>
 </figure>
 
 ## Soft Leg
@@ -61,6 +66,15 @@ The leg's hollowed structure makes it flexible and impact resistant. To demonstr
 <figure>
   <img src="/publications/2021-legged-soft-robot/leg.jpg" alt="Flexipod soft leg design and drop test" style="width:60%;display:block;margin:0 auto;border-radius:4px">
   <figcaption>(a) Soft leg, leg coupler, and bearing. (b) 3D model of the leg assembly showing its internal structure. (c) Chronophotograph of Flexipod dropped from 2.0 m.</figcaption>
+</figure>
+
+## Electrical Design
+
+A Raspberry Pi 4 handles wireless UDP communication and video streaming with the host PC, while a Teensy 4.0 microcontroller runs joint-space position control and state estimation. The Teensy communicates with four DJI C620 ESCs driving the M3508 brushless motors over a CAN bus (via an MCP2551 transceiver) and reads orientation and battery voltage over I²C from an onboard 9-DoF IMU (Adafruit LSM6DSOX + LIS3MDL) and voltage sensor (Adafruit INA260). Power is supplied by a Li-Po battery directly to the ESCs and through a 5 V step-down regulator (Pololu D36V50F5) to the logic electronics.
+
+<figure>
+  <img src="/publications/2021-legged-soft-robot/electrical_schematics.png" alt="Electrical system wiring diagram of Flexipod" style="width:100%;border-radius:4px">
+  <figcaption>Electrical system and wiring diagram of the Flexipod.</figcaption>
 </figure>
 
 ## Simulation

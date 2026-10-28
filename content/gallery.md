@@ -11,15 +11,15 @@ hideMeta: true
 <div class="gal-venue"><em>Science Robotics</em>, 2026. Follow-up <a href="/publications/2026-space-workshop/">workshop paper</a>: Best Paper Award, Space Robotics Workshop at IROS 2026</div>
 <div class="gal-grid">
   <img src="/publications/2026-argus/thumb.gif" alt="Argus rolling through a forest" data-lb="/publications/2026-argus/thumb.gif" loading="lazy">
-  <img src="/publications/2026-argus/argus_real_robot_blcak.jpg" alt="Argus robot in the studio" data-lb="/publications/2026-argus/argus_real_robot_blcak.jpg" loading="lazy">
-  <img src="/publications/2026-argus/argus_real_robot_DSC00045.jpg" alt="Argus robot, studio close-up" data-lb="/publications/2026-argus/argus_real_robot_DSC00045.jpg" loading="lazy">
-  <img src="/publications/2026-argus/argus_DSC00024.jpg" alt="Argus robot on beach" data-lb="/publications/2026-argus/argus_DSC00024.jpg" loading="lazy">
-  <img src="/publications/2026-argus/argus_C0328_00062.jpg" alt="Argus robot on beach at sunset" data-lb="/publications/2026-argus/argus_C0328_00062.jpg" loading="lazy">
-  <img src="/publications/2026-argus/argus_DSC00253.jpg" alt="Argus robot on sand" data-lb="/publications/2026-argus/argus_DSC00253.jpg" loading="lazy">
-  <img src="/publications/2026-argus/argus_DSC00262.jpg" alt="Argus robot on lawn" data-lb="/publications/2026-argus/argus_DSC00262.jpg" loading="lazy">
-  <img src="/publications/2026-argus/argus_DSC00232.jpg" alt="Argus robot in forest" data-lb="/publications/2026-argus/argus_DSC00232.jpg" loading="lazy">
-  <img src="/publications/2026-argus/argus_DSC00238_ps.jpg" alt="Argus robot in forest" data-lb="/publications/2026-argus/argus_DSC00238_ps.jpg" loading="lazy">
-  <img src="/publications/2026-argus/argus_DSC00240.jpg" alt="Argus robot on leaf-covered ground" data-lb="/publications/2026-argus/argus_DSC00240.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_real_robot_blcak.webp" alt="Argus robot in the studio" data-lb="/publications/2026-argus/argus_real_robot_blcak.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_real_robot_DSC00045.webp" alt="Argus robot, studio close-up" data-lb="/publications/2026-argus/argus_real_robot_DSC00045.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_DSC00024.webp" alt="Argus robot on beach" data-lb="/publications/2026-argus/argus_DSC00024.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_C0328_00062.webp" alt="Argus robot on beach at sunset" data-lb="/publications/2026-argus/argus_C0328_00062.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_DSC00253.webp" alt="Argus robot on sand" data-lb="/publications/2026-argus/argus_DSC00253.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_DSC00262.webp" alt="Argus robot on lawn" data-lb="/publications/2026-argus/argus_DSC00262.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_DSC00232.webp" alt="Argus robot in forest" data-lb="/publications/2026-argus/argus_DSC00232.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_DSC00238_ps.webp" alt="Argus robot in forest" data-lb="/publications/2026-argus/argus_DSC00238_ps.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_DSC00240.webp" alt="Argus robot on leaf-covered ground" data-lb="/publications/2026-argus/argus_DSC00240.jpg" loading="lazy">
 </div>
 </div>
 
@@ -44,12 +44,12 @@ hideMeta: true
 <div class="gal-venue">Preprint, 2026</div>
 <div class="gal-grid">
   <img src="/publications/2026-marble/thumb.gif" alt="MARBLE rolling toward water" data-lb="/publications/2026-marble/thumb.gif" loading="lazy">
-  <img src="/publications/2026-marble/MARBLE.jpeg" alt="MARBLE" data-lb="/publications/2026-marble/MARBLE.jpeg" loading="lazy">
-  <img src="/publications/2026-marble/close-shot.jpg" alt="MARBLE close-up" data-lb="/publications/2026-marble/close-shot.jpg" loading="lazy">
-  <img src="/publications/2026-marble/land-water-transition.jpg" alt="MARBLE moving from land into water" data-lb="/publications/2026-marble/land-water-transition.jpg" loading="lazy">
-  <img src="/publications/2026-marble/location-boardwalk.jpg" alt="MARBLE on a boardwalk" data-lb="/publications/2026-marble/location-boardwalk.jpg" loading="lazy">
-  <img src="/publications/2026-marble/location-pavilion.jpg" alt="MARBLE at a pavilion" data-lb="/publications/2026-marble/location-pavilion.jpg" loading="lazy">
-  <img src="/publications/2026-marble/obstacle-collision.jpg" alt="MARBLE rolling into an obstacle" data-lb="/publications/2026-marble/obstacle-collision.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-marble_MARBLE.webp" alt="MARBLE" data-lb="/publications/2026-marble/MARBLE.jpeg" loading="lazy">
+  <img src="/gallery/thumbs/2026-marble_close-shot.webp" alt="MARBLE close-up" data-lb="/publications/2026-marble/close-shot.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-marble_land-water-transition.webp" alt="MARBLE moving from land into water" data-lb="/publications/2026-marble/land-water-transition.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-marble_location-boardwalk.webp" alt="MARBLE on a boardwalk" data-lb="/publications/2026-marble/location-boardwalk.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-marble_location-pavilion.webp" alt="MARBLE at a pavilion" data-lb="/publications/2026-marble/location-pavilion.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2026-marble_obstacle-collision.webp" alt="MARBLE rolling into an obstacle" data-lb="/publications/2026-marble/obstacle-collision.jpg" loading="lazy">
 </div>
 </div>
 
@@ -73,13 +73,13 @@ hideMeta: true
 <h3><a href="/publications/2021-legged-soft-robot/">Flexipod</a></h3>
 <div class="gal-venue"><em>ICRA</em>, 2021</div>
 <div class="gal-grid">
-  <img src="/publications/2021-legged-soft-robot/flexipod_at_columbia.jpg" alt="Flexipod at Columbia University" data-lb="/publications/2021-legged-soft-robot/flexipod_at_columbia.jpg" loading="lazy">
-  <img src="/publications/2021-legged-soft-robot/morningside_park_unstructured.jpg" alt="Flexipod on unstructured terrain" data-lb="/publications/2021-legged-soft-robot/morningside_park_unstructured.jpg" loading="lazy">
-  <img src="/publications/2021-legged-soft-robot/bounding_mat.jpg" alt="Flexipod bounding on mat" data-lb="/publications/2021-legged-soft-robot/bounding_mat.jpg" loading="lazy">
-  <img src="/publications/2021-legged-soft-robot/columbia_brick.jpg" alt="Flexipod on brick at Columbia" data-lb="/publications/2021-legged-soft-robot/columbia_brick.jpg" loading="lazy">
-  <img src="/publications/2021-legged-soft-robot/morningside_park_grass.jpg" alt="Flexipod on grass" data-lb="/publications/2021-legged-soft-robot/morningside_park_grass.jpg" loading="lazy">
-  <img src="/publications/2021-legged-soft-robot/morningside_park_sand.jpg" alt="Flexipod on sand" data-lb="/publications/2021-legged-soft-robot/morningside_park_sand.jpg" loading="lazy">
-  <img src="/publications/2021-legged-soft-robot/morningside_park_concrete_floor.jpg" alt="Flexipod on concrete" data-lb="/publications/2021-legged-soft-robot/morningside_park_concrete_floor.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2021-legged-soft-robot_flexipod_at_columbia.webp" alt="Flexipod at Columbia University" data-lb="/publications/2021-legged-soft-robot/flexipod_at_columbia.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2021-legged-soft-robot_morningside_park_unstructured.webp" alt="Flexipod on unstructured terrain" data-lb="/publications/2021-legged-soft-robot/morningside_park_unstructured.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2021-legged-soft-robot_bounding_mat.webp" alt="Flexipod bounding on mat" data-lb="/publications/2021-legged-soft-robot/bounding_mat.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2021-legged-soft-robot_columbia_brick.webp" alt="Flexipod on brick at Columbia" data-lb="/publications/2021-legged-soft-robot/columbia_brick.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2021-legged-soft-robot_morningside_park_grass.webp" alt="Flexipod on grass" data-lb="/publications/2021-legged-soft-robot/morningside_park_grass.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2021-legged-soft-robot_morningside_park_sand.webp" alt="Flexipod on sand" data-lb="/publications/2021-legged-soft-robot/morningside_park_sand.jpg" loading="lazy">
+  <img src="/gallery/thumbs/2021-legged-soft-robot_morningside_park_concrete_floor.webp" alt="Flexipod on concrete" data-lb="/publications/2021-legged-soft-robot/morningside_park_concrete_floor.jpg" loading="lazy">
 </div>
 </div>
 
@@ -87,7 +87,7 @@ hideMeta: true
 <h3><a href="/publications/2020-actuation-speed/">Fast silicone/ethanol soft actuators</a></h3>
 <div class="gal-venue"><em>Actuators</em>, 2020, cover article</div>
 <div class="gal-grid">
-  <img class="cover" src="/publications/2020-actuation-speed/preview.png" alt="Actuation speed preview" data-lb="/publications/2020-actuation-speed/preview.png" loading="lazy">
+  <img class="cover" src="/gallery/thumbs/2020-actuation-speed_preview.webp" alt="Actuation speed preview" data-lb="/publications/2020-actuation-speed/preview.png" loading="lazy">
 </div>
 </div>
 
@@ -95,6 +95,6 @@ hideMeta: true
 <h3><a href="/publications/2019-additive-manufacturing/">3D-printed silicone composite actuators</a></h3>
 <div class="gal-venue"><em>3D Printing and Additive Manufacturing</em>, 2019, cover article</div>
 <div class="gal-grid">
-  <img class="cover" src="/publications/2019-additive-manufacturing/preview.jpg" alt="Additive manufacturing preview" data-lb="/publications/2019-additive-manufacturing/preview.jpg" loading="lazy">
+  <img class="cover" src="/gallery/thumbs/2019-additive-manufacturing_preview.webp" alt="Additive manufacturing preview" data-lb="/publications/2019-additive-manufacturing/preview.jpg" loading="lazy">
 </div>
 </div>

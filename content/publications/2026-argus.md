@@ -29,22 +29,22 @@ Symmetry is a central organizing principle in natural systems, yet its use as a 
 
 ## Overview
 
-<img src="/publications/2026-argus/argus_video_wall.gif" alt="Argus demo wall: locomotion, terrain, manipulation" style="width:100%;height:auto;display:block;margin:1em 0;border-radius:4px">
+<video autoplay muted loop playsinline preload="metadata" style="width:100%;height:auto;display:block;margin:1em 0;border-radius:4px" src="/publications/2026-argus/argus_video_wall.mp4"></video>
 
 ## Simulation Demos
 
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;margin:1em 0">
   <div>
     <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Base Locomotion</p>
-    <img src="/publications/2026-argus/argus_base_demo.gif" alt="Argus base locomotion demo" style="width:100%;height:auto;display:block;border-radius:4px">
+    <video autoplay muted loop playsinline preload="metadata" style="width:100%;height:auto;display:block;border-radius:4px" src="/publications/2026-argus/argus_base_demo.mp4"></video>
   </div>
   <div>
     <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Object Pushing</p>
-    <img src="/publications/2026-argus/object_pushing_demo.gif" alt="Argus object pushing demo" style="width:100%;height:auto;display:block;border-radius:4px">
+    <video autoplay muted loop playsinline preload="metadata" style="width:100%;height:auto;display:block;border-radius:4px" src="/publications/2026-argus/object_pushing_demo.mp4"></video>
   </div>
   <div>
     <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Object Tracking</p>
-    <img src="/publications/2026-argus/object_tracking_demo.gif" alt="Argus object tracking demo" style="width:100%;height:auto;display:block;border-radius:4px">
+    <video autoplay muted loop playsinline preload="metadata" style="width:100%;height:auto;display:block;border-radius:4px" src="/publications/2026-argus/object_tracking_demo.mp4"></video>
   </div>
 </div>
 
