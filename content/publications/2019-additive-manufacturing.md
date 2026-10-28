@@ -19,6 +19,12 @@ abstract: "We present a multimaterial printer and associated processes for in si
 
 Elastomer composites have proven to be promising functional materials for soft actuators. Direct manufacturing of these materials is a practical prerequisite for Soft Robotics applications, where form and function are intricately entangled. In this article we show a multimaterial printer and associated processes for in situ fabrication of silicones and silicone-based elastomer composites for soft actuators. We discuss the fabrication process for both the silicone/ethanol composite material and encapsulating silicone skin using an inline passive mixing system, followed by characterization of the rheological and mechanical properties of the printed materials for various print modalities. Rheological study revealed the conditions, allowing continuous 3D printing of both small and big items out of silicone rubber and silicone/ethanol composite. Anisotropic mechanical properties allow for the design of functional characteristics of soft actuators by choosing print design modalities. We demonstrate a single-print-job additive manufacturing of functional multimaterial systems for soft actuation, and suggest that the developed processes will allow us to design soft robots with a broad range of actuation characteristics.
 
+## Video
+
+{{< youtube 6kZ5QKU3RHI >}}
+
+{{< youtube KcunfdATq7U >}}
+
 ## Paper
 
 <object data="/publications/2019-additive-manufacturing/2019-additive-manufacturing.pdf" type="application/pdf" width="100%" height="800px" style="border:none;"><p>PDF cannot be displayed. <a href="/publications/2019-additive-manufacturing/2019-additive-manufacturing.pdf">Download PDF</a></p></object>
