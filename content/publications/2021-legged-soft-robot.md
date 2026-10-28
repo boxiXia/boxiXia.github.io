@@ -83,6 +83,10 @@ We developed a soft robot simulation environment based on [Titan](https://github
 
 {{< youtube 52yaNeKdhIc >}}
 
+I also used the simulator to train a soft humanoid with SAC:
+
+{{< youtube 4XBv9BbCrf8 >}}
+
 ## Locomotion Patterns
 
 <figure>
