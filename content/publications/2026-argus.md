@@ -48,18 +48,84 @@ Symmetry is a central organizing principle in natural systems, yet its use as a 
   </div>
 </div>
 
+## Duke Pratt Feature
+
+A short feature from Duke Pratt School of Engineering highlighting Argus.
+
+{{< youtube id="78brFANEgkA" short="true" >}}
+
+## Indoor Locomotion
+
+<div class="yt-grid">
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Flat-Terrain Velocity Tracking</p>
+    {{< youtube tof3rchdtj0 >}}
+  </div>
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Rapid Self-Stabilization</p>
+    {{< youtube v_4VvjEpc9w >}}
+  </div>
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Resilience to Actuator Failure</p>
+    {{< youtube 5gExTwAt7yA >}}
+  </div>
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Discrete Obstacle Terrain</p>
+    {{< youtube rrwHc6r7-5w >}}
+  </div>
+</div>
+
+## Locomotion Across Natural Terrains
+
+<div class="yt-grid">
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Sandy Terrain</p>
+    {{< youtube EMpYeEm6luc >}}
+  </div>
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Forest Floor</p>
+    {{< youtube Rd-YEsg5w-o >}}
+  </div>
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Grassland</p>
+    {{< youtube 4lbf1fq5Bek >}}
+  </div>
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Concrete & Paved Surfaces</p>
+    {{< youtube dXvqbsn9RmU >}}
+  </div>
+</div>
+
+## Loco-Manipulation & Perception
+
+<div class="yt-grid">
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Autonomous Object Tracking</p>
+    {{< youtube WMbLPzQ6gow >}}
+  </div>
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Autonomous Object Pushing</p>
+    {{< youtube vd-CpTKmMTk >}}
+  </div>
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Perception During Loco-Manipulation</p>
+    {{< youtube vyWdpw35UhY >}}
+  </div>
+  <div>
+    <p style="margin:0 0 4px;font-size:0.9em;font-weight:bold">Simulated Lunar Wall Climbing</p>
+    {{< youtube QDTKn5EGQEs >}}
+  </div>
+</div>
+
 ## Photos
 
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;margin:1em 0">
-  <img src="/publications/2026-argus/argus_real_robot_blcak.jpg" alt="Argus robot in the studio" style="width:100%;height:auto;display:block;border-radius:4px">
-  <img src="/publications/2026-argus/argus_real_robot_DSC00045.jpg" alt="Argus robot, studio close-up" style="width:100%;height:auto;display:block;border-radius:4px">
-  <img src="/publications/2026-argus/argus_DSC00024.jpg" alt="Argus robot on beach" style="width:100%;height:auto;display:block;border-radius:4px">
-  <img src="/publications/2026-argus/argus_C0328_00062.jpg" alt="Argus robot on beach at sunset" style="width:100%;height:auto;display:block;border-radius:4px">
-  <img src="/publications/2026-argus/argus_DSC00253.jpg" alt="Argus robot on sand" style="width:100%;height:auto;display:block;border-radius:4px">
-  <img src="/publications/2026-argus/argus_DSC00262.jpg" alt="Argus robot on lawn" style="width:100%;height:auto;display:block;border-radius:4px">
-  <img src="/publications/2026-argus/argus_DSC00232.jpg" alt="Argus robot in forest" style="width:100%;height:auto;display:block;border-radius:4px">
-  <img src="/publications/2026-argus/argus_DSC00238_ps.jpg" alt="Argus robot in forest" style="width:100%;height:auto;display:block;border-radius:4px">
-  <img src="/publications/2026-argus/argus_DSC00240.jpg" alt="Argus robot on leaf-covered ground" style="width:100%;height:auto;display:block;border-radius:4px">
+<div class="gal-grid">
+  <img src="/gallery/thumbs/2026-argus_argus_real_robot_DSC00045.webp" data-lb="/publications/2026-argus/argus_real_robot_DSC00045.jpg" alt="Argus robot, studio close-up" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_DSC00024.webp" data-lb="/publications/2026-argus/argus_DSC00024.jpg" alt="Argus robot on beach" style="object-position:center 60%" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_C0328_00062.webp" data-lb="/publications/2026-argus/argus_C0328_00062.jpg" alt="Argus robot on beach at sunset" style="object-position:center 55%" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_DSC00253.webp" data-lb="/publications/2026-argus/argus_DSC00253.jpg" alt="Argus robot on sand" style="object-position:center 65%" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_DSC00262.webp" data-lb="/publications/2026-argus/argus_DSC00262.jpg" alt="Argus robot on lawn" style="object-position:center 65%" loading="lazy">
+  <img src="/gallery/thumbs/2026-argus_argus_DSC00232.webp" data-lb="/publications/2026-argus/argus_DSC00232.jpg" alt="Argus robot in forest" style="object-position:center 58%" loading="lazy">
 </div>
 
 ## Paper

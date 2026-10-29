@@ -1,5 +1,8 @@
 {{- /* Lightweight YouTube: a thumbnail until clicked, then the real player. Overrides Hugo's built-in. */ -}}
 {{- $id := .Get "id" | default (.Get 0) -}}
-<div class="yt" data-id="{{ $id }}">
-  <button type="button" aria-label="Play video on YouTube"><img src="https://i.ytimg.com/vi/{{ $id }}/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play"></span></button>
+{{- $short := false -}}
+{{- if .IsNamedParams }}{{ $short = eq (.Get "short") "true" }}{{ end -}}
+{{- $thumb := cond $short "maxresdefault.jpg" "hqdefault.jpg" -}}
+<div class="yt{{ if $short }} short{{ end }}" data-id="{{ $id }}">
+  <button type="button" aria-label="Play video on YouTube"><img src="https://i.ytimg.com/vi/{{ $id }}/{{ $thumb }}" alt="" loading="lazy" decoding="async"><span class="yt-play"></span></button>
 </div>
